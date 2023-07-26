@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/js/calphotos.js"></script>
+<title>
+
+CalPhotos Plants: Scientific Names [X]
+
+</title>
+
+
+<style type="text/css">
+   p, td, th, body {font-family: arial, verdana, helvetica, sans-serif;}
+   p, td, th, body {font-size: 14px;}
+   a.nounderline {
+       text-decoration: none;
+       color:  white;
+       outline: none;
+    }
+    "a.subtle_link {
+       text-decoration: none;
+       font-size: 10px;
+       outline: none;
+    }
+</style>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BGCZ4BQBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1BGCZ4BQBR');
+</script>
+
+
+<!-- jquery-3.3.1.min.js used for sessions, ajax, figuring out if someone is logged in or not -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+function checkLogin() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/check_login?cgisessid=' + x, 
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/check_login?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#contributors').html(response);
+
+        },
+        error: function(xhr) {
+            $('#contributors').html('response error login');
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+function getPageContents() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/contributor_page?cgisessid=' + x,
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/contributor_page?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#links').html(response);
+        },
+        error: function(xhr) {
+            $('#links').html('response error');
+        }
+    });
+}
+</script>
+
+
+</head>
+<body bgcolor=#FFFFFF onload='checkLogin();'>
+
+<!-- colors: silver=#E6E8FA navyblu=#23238E ltblue=DFE5FA  -->
+
+<table align=center border=0 width=90% cellspacing=0 cellpadding=0>
+<!-- logo (optional) on lt. blue background -->
+<tr>
+<td width=5% bgcolor=DFE5FA>
+<!-- uncomment the following line to add a logo ----->
+<!-- img align = left border=0 height=130 src = "/calflora/icon.gif" alt = "CalFlora"-->
+<br>
+</td>
+<td align=left valign=bottom>
+    <table border=0 cellpadding=5>
+    <tr>
+    <td align=left valign=bottom>
+    <font face="Helvetica,Arial,Verdana" color=23238E>
+    <big><big><big>
+
+CalPhotos Plants: Scientific Names [X]
+
+    </big></big></big>
+    </font>
+    &nbsp;&nbsp;
+    <font face="Helvetica,Arial,Verdana" color=000000>
+    <b>
+    <!-- insert a smaller heading comment here -->
+    </b>
+    </font>
+    </td>
+    </table>
+</td>
+</tr>
+
+<!-- navy blue bar -->
+<tr>
+<td width=100% colspan=2 bgcolor=23238E align=right>
+
+<div id="contributors"></div>
+
+</td></tr>
+<!-- left side lt. blue bar with links -->
+<tr>
+<td width=10%  bgcolor=DFE5FA align=center valign=top>
+&nbsp;<p>
+<font face="Helvetica,Arial,Verdana">
+<p>
+<small>
+
+
+</small>
+</font>
+</td>
+<!-- main menu -->
+<td valign=top>
+    <table cellpadding=5 width=100%>
+    <tr>
+    <td valign=top>
+    <font face="Helvetica,Arial,Verdana">
+
+<center><i>Back to: <a href=/>CalPhotos</a> > <a href=/flora/>Plants</a> > Browse Scientific Names [X]</i></center><p><p><center>Last updated: Jul 25 2023</center><p>
+<p>see also: <a href=/browse_imgs/plant.html>Browse Thumbnail Photos of Plants</a><p>
+<table width=100%><tr>
+<td valign=top><b>x - Xanthoria</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=x+Disophyllum+cv.+Coral+Geisha&title_tag=x+Disophyllum+cv.+Coral+Geisha>x Disophyllum cv. Coral Geisha</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=x+Disophyllum+hybrid&title_tag=x+Disophyllum+hybrid>x Disophyllum hybrid</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+blephariphyllum&title_tag=Xanthisma+blephariphyllum>Xanthisma blephariphyllum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+gracile&title_tag=Xanthisma+gracile>Xanthisma gracile</a> (50)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+grindelioides&title_tag=Xanthisma+grindelioides>Xanthisma grindelioides</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+junceum&title_tag=Xanthisma+junceum>Xanthisma junceum</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+spinulosum&title_tag=Xanthisma+spinulosum>Xanthisma spinulosum</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+spinulosum+var.+chihuahuanum&title_tag=Xanthisma+spinulosum+var.+chihuahuanum>Xanthisma spinulosum var. chihuahuanum</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+spinulosum+var.+glaberrimum&title_tag=Xanthisma+spinulosum+var.+glaberrimum>Xanthisma spinulosum var. glaberrimum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+spinulosum+var.+gooddingii&title_tag=Xanthisma+spinulosum+var.+gooddingii>Xanthisma spinulosum var. gooddingii</a> (39)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+spinulosum+var.+spinulosum&title_tag=Xanthisma+spinulosum+var.+spinulosum>Xanthisma spinulosum var. spinulosum</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+texana&title_tag=Xanthisma+texana>Xanthisma texana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthisma+texanum+var.+drummondii&title_tag=Xanthisma+texanum+var.+drummondii>Xanthisma texanum var. drummondii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthium+spinosum&title_tag=Xanthium+spinosum>Xanthium spinosum</a> (58)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthium+spinulosum+var.+chihuahuanum&title_tag=Xanthium+spinulosum+var.+chihuahuanum>Xanthium spinulosum var. chihuahuanum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthium+strumarium&title_tag=Xanthium+strumarium>Xanthium strumarium</a> (86)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthium+strumarium+var.+canadense&title_tag=Xanthium+strumarium+var.+canadense>Xanthium strumarium var. canadense</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthium+strumarium+var.+glabratum&title_tag=Xanthium+strumarium+var.+glabratum>Xanthium strumarium var. glabratum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthocephallum+eradiatum&title_tag=Xanthocephallum+eradiatum>Xanthocephallum eradiatum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthocephalum+gymnospermoides&title_tag=Xanthocephalum+gymnospermoides>Xanthocephalum gymnospermoides</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthocercis+zambesiaca&title_tag=Xanthocercis+zambesiaca>Xanthocercis zambesiaca</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthoria+candelaria&title_tag=Xanthoria+candelaria>Xanthoria candelaria</a> (1)<br>
+</td>
+<td valign=top><b>Xanthorrhoea - Ximenia</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+australis&title_tag=Xanthorrhoea+australis>Xanthorrhoea australis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+glauca&title_tag=Xanthorrhoea+glauca>Xanthorrhoea glauca</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+latifolia&title_tag=Xanthorrhoea+latifolia>Xanthorrhoea latifolia</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+latifolia+ssp.+latifolia&title_tag=Xanthorrhoea+latifolia+ssp.+latifolia>Xanthorrhoea latifolia ssp. latifolia</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+media&title_tag=Xanthorrhoea+media>Xanthorrhoea media</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+preissii&title_tag=Xanthorrhoea+preissii>Xanthorrhoea preissii</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+quadrangulata&title_tag=Xanthorrhoea+quadrangulata>Xanthorrhoea quadrangulata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+resinosa&title_tag=Xanthorrhoea+resinosa>Xanthorrhoea resinosa</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+sp.&title_tag=Xanthorrhoea+sp.>Xanthorrhoea sp.</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthorrhoea+tateana&title_tag=Xanthorrhoea+tateana>Xanthorrhoea tateana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthosia+rotundifolia&title_tag=Xanthosia+rotundifolia>Xanthosia rotundifolia</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthosoma+sagittifolium&title_tag=Xanthosoma+sagittifolium>Xanthosoma sagittifolium</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xanthoxylum+davyi&title_tag=Xanthoxylum+davyi>Xanthoxylum davyi</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xenophyllum+tenax&title_tag=Xenophyllum+tenax>Xenophyllum tenax</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xerochrysum+bracteatum&title_tag=Xerochrysum+bracteatum>Xerochrysum bracteatum</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xeroderris+stuhlmannii&title_tag=Xeroderris+stuhlmannii>Xeroderris stuhlmannii</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xeronema+callistemon&title_tag=Xeronema+callistemon>Xeronema callistemon</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xerophyllum+tenax&title_tag=Xerophyllum+tenax>Xerophyllum tenax</a> (160)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xerosicyos+danguyi&title_tag=Xerosicyos+danguyi>Xerosicyos danguyi</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xgymnigritella+suaveolens&title_tag=Xgymnigritella+suaveolens>Xgymnigritella suaveolens</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ximenia+caffra&title_tag=Ximenia+caffra>Ximenia caffra</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ximenia+caffra+var.+caffra&title_tag=Ximenia+caffra+var.+caffra>Ximenia caffra var. caffra</a> (2)<br>
+</td>
+<td valign=top><b>Xiphidium - Xysmalobium</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xiphidium+caeruleum&title_tag=Xiphidium+caeruleum>Xiphidium caeruleum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylobium+squalens&title_tag=Xylobium+squalens>Xylobium squalens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylococcus+bicolor&title_tag=Xylococcus+bicolor>Xylococcus bicolor</a> (76)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=XylococcusÂ bicolor&title_tag=XylococcusÂ bicolor>XylococcusÂ bicolor</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylopia+laevigata&title_tag=Xylopia+laevigata>Xylopia laevigata</a> (44)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylopia+ochrantha&title_tag=Xylopia+ochrantha>Xylopia ochrantha</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylorhiza+cognata&title_tag=Xylorhiza+cognata>Xylorhiza cognata</a> (50)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylorhiza+glabriuscula&title_tag=Xylorhiza+glabriuscula>Xylorhiza glabriuscula</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylorhiza+orcuttii&title_tag=Xylorhiza+orcuttii>Xylorhiza orcuttii</a> (71)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylorhiza+tortifolia&title_tag=Xylorhiza+tortifolia>Xylorhiza tortifolia</a> (53)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylorhiza+tortifolia+var.+tortifolia&title_tag=Xylorhiza+tortifolia+var.+tortifolia>Xylorhiza tortifolia var. tortifolia</a> (156)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylorhiza+wrightii&title_tag=Xylorhiza+wrightii>Xylorhiza wrightii</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylosma+congestum&title_tag=Xylosma+congestum>Xylosma congestum</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylosma+crenatum&title_tag=Xylosma+crenatum>Xylosma crenatum</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylosma+hawaiiense&title_tag=Xylosma+hawaiiense>Xylosma hawaiiense</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylothamia+diffusa&title_tag=Xylothamia+diffusa>Xylothamia diffusa</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylothamia+palmeri&title_tag=Xylothamia+palmeri>Xylothamia palmeri</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xylothamia+triantha&title_tag=Xylothamia+triantha>Xylothamia triantha</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xymalos+monospora&title_tag=Xymalos+monospora>Xymalos monospora</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Xysmalobium+undulatum&title_tag=Xysmalobium+undulatum>Xysmalobium undulatum</a> (3)<br>
+</td>
+</tr></table>
+
+    </td>
+    </tr>
+    </table>
+
+
+<!-- bottom lt. blue section -->
+
+<tr>
+<td colspan=2 bgcolor=DFE5FA>
+    <table cellpadding=15 align=center>
+    <tr>
+    <td>
+    <br>
+    </font>
+    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+<!--- bottom section -->
+<p>
+<center>
+<table cellpadding=5 cellspacing=5>
+<tr>
+<td>
+<center>
+<a href=/>CalPhotos</a>
+ is a project of <a href=http://bnhm.berkeley.edu>BNHM</a>&nbsp;&nbsp;
+University of California, Berkeley
+<p>
+<a href=/cgi/dlpmail?step=form&subject=CalPhotos>Questions and Comments</a>
+<br>
+<small>
+
+<i>
+this page last updated: Jul 25, 2023
+<br>
+</i>
+</small>
+
+
+</table>
+</center>
+<p>
+</small>
+</font>
+</body>
+</html>
+

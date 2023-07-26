@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/js/calphotos.js"></script>
+<title>
+
+CalPhotos Plants: Scientific Names [J]
+
+</title>
+
+
+<style type="text/css">
+   p, td, th, body {font-family: arial, verdana, helvetica, sans-serif;}
+   p, td, th, body {font-size: 14px;}
+   a.nounderline {
+       text-decoration: none;
+       color:  white;
+       outline: none;
+    }
+    "a.subtle_link {
+       text-decoration: none;
+       font-size: 10px;
+       outline: none;
+    }
+</style>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BGCZ4BQBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1BGCZ4BQBR');
+</script>
+
+
+<!-- jquery-3.3.1.min.js used for sessions, ajax, figuring out if someone is logged in or not -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+function checkLogin() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/check_login?cgisessid=' + x, 
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/check_login?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#contributors').html(response);
+
+        },
+        error: function(xhr) {
+            $('#contributors').html('response error login');
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+function getPageContents() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/contributor_page?cgisessid=' + x,
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/contributor_page?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#links').html(response);
+        },
+        error: function(xhr) {
+            $('#links').html('response error');
+        }
+    });
+}
+</script>
+
+
+</head>
+<body bgcolor=#FFFFFF onload='checkLogin();'>
+
+<!-- colors: silver=#E6E8FA navyblu=#23238E ltblue=DFE5FA  -->
+
+<table align=center border=0 width=90% cellspacing=0 cellpadding=0>
+<!-- logo (optional) on lt. blue background -->
+<tr>
+<td width=5% bgcolor=DFE5FA>
+<!-- uncomment the following line to add a logo ----->
+<!-- img align = left border=0 height=130 src = "/calflora/icon.gif" alt = "CalFlora"-->
+<br>
+</td>
+<td align=left valign=bottom>
+    <table border=0 cellpadding=5>
+    <tr>
+    <td align=left valign=bottom>
+    <font face="Helvetica,Arial,Verdana" color=23238E>
+    <big><big><big>
+
+CalPhotos Plants: Scientific Names [J]
+
+    </big></big></big>
+    </font>
+    &nbsp;&nbsp;
+    <font face="Helvetica,Arial,Verdana" color=000000>
+    <b>
+    <!-- insert a smaller heading comment here -->
+    </b>
+    </font>
+    </td>
+    </table>
+</td>
+</tr>
+
+<!-- navy blue bar -->
+<tr>
+<td width=100% colspan=2 bgcolor=23238E align=right>
+
+<div id="contributors"></div>
+
+</td></tr>
+<!-- left side lt. blue bar with links -->
+<tr>
+<td width=10%  bgcolor=DFE5FA align=center valign=top>
+&nbsp;<p>
+<font face="Helvetica,Arial,Verdana">
+<p>
+<small>
+
+
+</small>
+</font>
+</td>
+<!-- main menu -->
+<td valign=top>
+    <table cellpadding=5 width=100%>
+    <tr>
+    <td valign=top>
+    <font face="Helvetica,Arial,Verdana">
+
+<center><i>Back to: <a href=/>CalPhotos</a> > <a href=/flora/>Plants</a> > Browse Scientific Names [J]</i></center><p><p><center>Last updated: Jul 25 2023</center><p>
+<p>see also: <a href=/browse_imgs/plant.html>Browse Thumbnail Photos of Plants</a><p>
+<table width=100%><tr>
+<td valign=top><b>Jacaranda - Juglans</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacaranda+mimosifolia&title_tag=Jacaranda+mimosifolia>Jacaranda mimosifolia</a> (51)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jackquemontia+abutiloides&title_tag=Jackquemontia+abutiloides>Jackquemontia abutiloides</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacobaea+maritima&title_tag=Jacobaea+maritima>Jacobaea maritima</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacobaea+maritima+ssp.+bicolor&title_tag=Jacobaea+maritima+ssp.+bicolor>Jacobaea maritima ssp. bicolor</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+abutiloides&title_tag=Jacquemontia+abutiloides>Jacquemontia abutiloides</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+abutiloides+var.+eastwoodiana&title_tag=Jacquemontia+abutiloides+var.+eastwoodiana>Jacquemontia abutiloides var. eastwoodiana</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+agrestis&title_tag=Jacquemontia+agrestis>Jacquemontia agrestis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+curtisii&title_tag=Jacquemontia+curtisii>Jacquemontia curtisii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+eastwoodiana&title_tag=Jacquemontia+eastwoodiana>Jacquemontia eastwoodiana</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+ovalifolia&title_tag=Jacquemontia+ovalifolia>Jacquemontia ovalifolia</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+pentanthos&title_tag=Jacquemontia+pentanthos>Jacquemontia pentanthos</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquemontia+pringlei&title_tag=Jacquemontia+pringlei>Jacquemontia pringlei</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jacquinia+keyensis&title_tag=Jacquinia+keyensis>Jacquinia keyensis</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jaegeria+glabra&title_tag=Jaegeria+glabra>Jaegeria glabra</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jaegeria+hirta&title_tag=Jaegeria+hirta>Jaegeria hirta</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jaffueliobryum+raui&title_tag=Jaffueliobryum+raui>Jaffueliobryum raui</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jamesia+americana&title_tag=Jamesia+americana>Jamesia americana</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jamesia+americana+var.+rosea&title_tag=Jamesia+americana+var.+rosea>Jamesia americana var. rosea</a> (43)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jamesianthus+alabamensis&title_tag=Jamesianthus+alabamensis>Jamesianthus alabamensis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jania&title_tag=Jania>Jania</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jania+adhaerens&title_tag=Jania+adhaerens>Jania adhaerens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jania+pumila&title_tag=Jania+pumila>Jania pumila</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Janusia+californica&title_tag=Janusia+californica>Janusia californica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Janusia+gracilis&title_tag=Janusia+gracilis>Janusia gracilis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jarilla+chocola&title_tag=Jarilla+chocola>Jarilla chocola</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasione+crispa&title_tag=Jasione+crispa>Jasione crispa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasione+montana&title_tag=Jasione+montana>Jasione montana</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminocereus+howellii&title_tag=Jasminocereus+howellii>Jasminocereus howellii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminocereus+thouarsii+var.+delicatus&title_tag=Jasminocereus+thouarsii+var.+delicatus>Jasminocereus thouarsii var. delicatus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+angulare&title_tag=Jasminum+angulare>Jasminum angulare</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+azoricum&title_tag=Jasminum+azoricum>Jasminum azoricum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+fluminense&title_tag=Jasminum+fluminense>Jasminum fluminense</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+grandiflorum&title_tag=Jasminum+grandiflorum>Jasminum grandiflorum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+laurifolium&title_tag=Jasminum+laurifolium>Jasminum laurifolium</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+mesnyi&title_tag=Jasminum+mesnyi>Jasminum mesnyi</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+multiflorum&title_tag=Jasminum+multiflorum>Jasminum multiflorum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+nitidum&title_tag=Jasminum+nitidum>Jasminum nitidum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+nudiflorum&title_tag=Jasminum+nudiflorum>Jasminum nudiflorum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+parkeri&title_tag=Jasminum+parkeri>Jasminum parkeri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+polyanthum&title_tag=Jasminum+polyanthum>Jasminum polyanthum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+rex&title_tag=Jasminum+rex>Jasminum rex</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jasminum+sambac&title_tag=Jasminum+sambac>Jasminum sambac</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+cinerea&title_tag=Jatropha+cinerea>Jatropha cinerea</a> (34)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+cordata&title_tag=Jatropha+cordata>Jatropha cordata</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+cuneata&title_tag=Jatropha+cuneata>Jatropha cuneata</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+curcas&title_tag=Jatropha+curcas>Jatropha curcas</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+dioca+var.+dioica&title_tag=Jatropha+dioca+var.+dioica>Jatropha dioca var. dioica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+dioica&title_tag=Jatropha+dioica>Jatropha dioica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+dioica+var.+dioica&title_tag=Jatropha+dioica+var.+dioica>Jatropha dioica var. dioica</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+dioica+var.+graminae&title_tag=Jatropha+dioica+var.+graminae>Jatropha dioica var. graminae</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+dioica+var.+graminea&title_tag=Jatropha+dioica+var.+graminea>Jatropha dioica var. graminea</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+gossypiifolia&title_tag=Jatropha+gossypiifolia>Jatropha gossypiifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+integerrima&title_tag=Jatropha+integerrima>Jatropha integerrima</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+mahafalensis&title_tag=Jatropha+mahafalensis>Jatropha mahafalensis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+malacophylla&title_tag=Jatropha+malacophylla>Jatropha malacophylla</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+multifida&title_tag=Jatropha+multifida>Jatropha multifida</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+podagrica&title_tag=Jatropha+podagrica>Jatropha podagrica</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+rufescens&title_tag=Jatropha+rufescens>Jatropha rufescens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+sp.&title_tag=Jatropha+sp.>Jatropha sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jatropha+vernicosa&title_tag=Jatropha+vernicosa>Jatropha vernicosa</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jaumea+carnosa&title_tag=Jaumea+carnosa>Jaumea carnosa</a> (74)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jefea+brevifolia&title_tag=Jefea+brevifolia>Jefea brevifolia</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jeffersonia+diphylla+&title_tag=Jeffersonia+diphylla+>Jeffersonia diphylla </a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jeffersonia+dubia&title_tag=Jeffersonia+dubia>Jeffersonia dubia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jensia+rammii&title_tag=Jensia+rammii>Jensia rammii</a> (35)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jensia+yosemitana&title_tag=Jensia+yosemitana>Jensia yosemitana</a> (54)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jepsonia+heterandra&title_tag=Jepsonia+heterandra>Jepsonia heterandra</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jepsonia+malvifolia&title_tag=Jepsonia+malvifolia>Jepsonia malvifolia</a> (35)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jepsonia+parryi&title_tag=Jepsonia+parryi>Jepsonia parryi</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Johanneshowellia+puberula&title_tag=Johanneshowellia+puberula>Johanneshowellia puberula</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Johnsonia+teretifolia&title_tag=Johnsonia+teretifolia>Johnsonia teretifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Johnstonella+angelica&title_tag=Johnstonella+angelica>Johnstonella angelica</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Johnstonella+angustifolia&title_tag=Johnstonella+angustifolia>Johnstonella angustifolia</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Joordaniella+spongiosa&title_tag=Joordaniella+spongiosa>Joordaniella spongiosa</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jordaaniella+sp.&title_tag=Jordaaniella+sp.>Jordaaniella sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jouvea+pilosa&title_tag=Jouvea+pilosa>Jouvea pilosa</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jubaea+chilensis&title_tag=Jubaea+chilensis>Jubaea chilensis</a> (28)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+californica&title_tag=Juglans+californica>Juglans californica</a> (48)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+californica+var.+hindsi&title_tag=Juglans+californica+var.+hindsi>Juglans californica var. hindsi</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+cinerea&title_tag=Juglans+cinerea>Juglans cinerea</a> (10)<br>
+</td>
+<td valign=top><b>Juglans - Juncus</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+hindsii&title_tag=Juglans+hindsii>Juglans hindsii</a> (59)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+major&title_tag=Juglans+major>Juglans major</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+mandshurica&title_tag=Juglans+mandshurica>Juglans mandshurica</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+microcarpa&title_tag=Juglans+microcarpa>Juglans microcarpa</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+microcarpa+var+microcarpa&title_tag=Juglans+microcarpa+var+microcarpa>Juglans microcarpa var microcarpa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+microcarpa+var.+microcarpa&title_tag=Juglans+microcarpa+var.+microcarpa>Juglans microcarpa var. microcarpa</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+nigra&title_tag=Juglans+nigra>Juglans nigra</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+olanchana&title_tag=Juglans+olanchana>Juglans olanchana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+regia&title_tag=Juglans+regia>Juglans regia</a> (30)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+regia+x+juglans+hindsii&title_tag=Juglans+regia+x+juglans+hindsii>Juglans regia x juglans hindsii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juglans+sp.&title_tag=Juglans+sp.>Juglans sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Julbernardia+globiflora&title_tag=Julbernardia+globiflora>Julbernardia globiflora</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jumelia+sagittata&title_tag=Jumelia+sagittata>Jumelia sagittata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+acuminatus&title_tag=Juncus+acuminatus>Juncus acuminatus</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+acutus&title_tag=Juncus+acutus>Juncus acutus</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+acutus+ssp.+leopoldii&title_tag=Juncus+acutus+ssp.+leopoldii>Juncus acutus ssp. leopoldii</a> (25)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+albescens&title_tag=Juncus+albescens>Juncus albescens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+alpino-articulatus&title_tag=Juncus+alpino-articulatus>Juncus alpino-articulatus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+alpinus&title_tag=Juncus+alpinus>Juncus alpinus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+arcticus+ssp.+arcticus&title_tag=Juncus+arcticus+ssp.+arcticus>Juncus arcticus ssp. arcticus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+articulatus&title_tag=Juncus+articulatus>Juncus articulatus</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+articulatus+ssp.+articulatus&title_tag=Juncus+articulatus+ssp.+articulatus>Juncus articulatus ssp. articulatus</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+balticus&title_tag=Juncus+balticus>Juncus balticus</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+balticus+ssp.+ater&title_tag=Juncus+balticus+ssp.+ater>Juncus balticus ssp. ater</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+bolanderi&title_tag=Juncus+bolanderi>Juncus bolanderi</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+brevicaudatus&title_tag=Juncus+brevicaudatus>Juncus brevicaudatus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+breweri&title_tag=Juncus+breweri>Juncus breweri</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+bryoides&title_tag=Juncus+bryoides>Juncus bryoides</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+bufonius&title_tag=Juncus+bufonius>Juncus bufonius</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+bufonius+var.+bufonius&title_tag=Juncus+bufonius+var.+bufonius>Juncus bufonius var. bufonius</a> (28)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+bufonius+var.+congestus&title_tag=Juncus+bufonius+var.+congestus>Juncus bufonius var. congestus</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+bufonius+var.+occidentalis&title_tag=Juncus+bufonius+var.+occidentalis>Juncus bufonius var. occidentalis</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+capillaris&title_tag=Juncus+capillaris>Juncus capillaris</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+capitatus&title_tag=Juncus+capitatus>Juncus capitatus</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+chlorocephalus&title_tag=Juncus+chlorocephalus>Juncus chlorocephalus</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+confusus&title_tag=Juncus+confusus>Juncus confusus</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+cooperi&title_tag=Juncus+cooperi>Juncus cooperi</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+covillei&title_tag=Juncus+covillei>Juncus covillei</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+diffusissimus&title_tag=Juncus+diffusissimus>Juncus diffusissimus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+digitatus&title_tag=Juncus+digitatus>Juncus digitatus</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+drummondii&title_tag=Juncus+drummondii>Juncus drummondii</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+dubius&title_tag=Juncus+dubius>Juncus dubius</a> (35)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+dudleyi&title_tag=Juncus+dudleyi>Juncus dudleyi</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+duranii&title_tag=Juncus+duranii>Juncus duranii</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+effusus&title_tag=Juncus+effusus>Juncus effusus</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+effusus+ssp.+pacificus&title_tag=Juncus+effusus+ssp.+pacificus>Juncus effusus ssp. pacificus</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+effusus+var.+compactus&title_tag=Juncus+effusus+var.+compactus>Juncus effusus var. compactus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+ensifolius&title_tag=Juncus+ensifolius>Juncus ensifolius</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+ensifolius+var.+ensifolius+&title_tag=Juncus+ensifolius+var.+ensifolius+>Juncus ensifolius var. ensifolius </a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+exiguus&title_tag=Juncus+exiguus>Juncus exiguus</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+falcatus&title_tag=Juncus+falcatus>Juncus falcatus</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+falcatus+ssp.+falcatus&title_tag=Juncus+falcatus+ssp.+falcatus>Juncus falcatus ssp. falcatus</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+filiformis&title_tag=Juncus+filiformis>Juncus filiformis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+gerardi+ssp.+gerardi&title_tag=Juncus+gerardi+ssp.+gerardi>Juncus gerardi ssp. gerardi</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+hemiendytus+var.+abjectus&title_tag=Juncus+hemiendytus+var.+abjectus>Juncus hemiendytus var. abjectus</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+hemiendytus+var.+hemiendytus&title_tag=Juncus+hemiendytus+var.+hemiendytus>Juncus hemiendytus var. hemiendytus</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+hesperius&title_tag=Juncus+hesperius>Juncus hesperius</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+howellii&title_tag=Juncus+howellii>Juncus howellii</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+interior&title_tag=Juncus+interior>Juncus interior</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+jacquinii&title_tag=Juncus+jacquinii>Juncus jacquinii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+kelloggii&title_tag=Juncus+kelloggii>Juncus kelloggii</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+laccatus&title_tag=Juncus+laccatus>Juncus laccatus</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+leiospermus+var.+ahartii&title_tag=Juncus+leiospermus+var.+ahartii>Juncus leiospermus var. ahartii</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+leiospermus+var.+leiospermus&title_tag=Juncus+leiospermus+var.+leiospermus>Juncus leiospermus var. leiospermus</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+lescurii&title_tag=Juncus+lescurii>Juncus lescurii</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+longistylis&title_tag=Juncus+longistylis>Juncus longistylis</a> (28)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+luciensis&title_tag=Juncus+luciensis>Juncus luciensis</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+macrandrus&title_tag=Juncus+macrandrus>Juncus macrandrus</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+macrophyllus&title_tag=Juncus+macrophyllus>Juncus macrophyllus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+marginatus&title_tag=Juncus+marginatus>Juncus marginatus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+maritimus&title_tag=Juncus+maritimus>Juncus maritimus</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+mertensianus&title_tag=Juncus+mertensianus>Juncus mertensianus</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+mexicanus&title_tag=Juncus+mexicanus>Juncus mexicanus</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+monanthos&title_tag=Juncus+monanthos>Juncus monanthos</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+nevadensis&title_tag=Juncus+nevadensis>Juncus nevadensis</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+nevadensis+ssp.+nevadensis&title_tag=Juncus+nevadensis+ssp.+nevadensis>Juncus nevadensis ssp. nevadensis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+nodosus&title_tag=Juncus+nodosus>Juncus nodosus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+occidentalis&title_tag=Juncus+occidentalis>Juncus occidentalis</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+orthophyllus&title_tag=Juncus+orthophyllus>Juncus orthophyllus</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+oxymeris&title_tag=Juncus+oxymeris>Juncus oxymeris</a> (15)<br>
+</td>
+<td valign=top><b>Juncus - Justicia</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+parryi&title_tag=Juncus+parryi>Juncus parryi</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+patens&title_tag=Juncus+patens>Juncus patens</a> (38)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+phaeocephalus&title_tag=Juncus+phaeocephalus>Juncus phaeocephalus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+phaeocephalus+var.+paniculatus&title_tag=Juncus+phaeocephalus+var.+paniculatus>Juncus phaeocephalus var. paniculatus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+phaeocephalus+var.+phaeocephalus&title_tag=Juncus+phaeocephalus+var.+phaeocephalus>Juncus phaeocephalus var. phaeocephalus</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+regelii&title_tag=Juncus+regelii>Juncus regelii</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+rugulosus&title_tag=Juncus+rugulosus>Juncus rugulosus</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+saximontanus&title_tag=Juncus+saximontanus>Juncus saximontanus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+sp.&title_tag=Juncus+sp.>Juncus sp.</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+supiniformis&title_tag=Juncus+supiniformis>Juncus supiniformis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+tenuis&title_tag=Juncus+tenuis>Juncus tenuis</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+textilis&title_tag=Juncus+textilis>Juncus textilis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+tiehmii&title_tag=Juncus+tiehmii>Juncus tiehmii</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+torreyi&title_tag=Juncus+torreyi>Juncus torreyi</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+tracyi&title_tag=Juncus+tracyi>Juncus tracyi</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+trifidus&title_tag=Juncus+trifidus>Juncus trifidus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+triformis&title_tag=Juncus+triformis>Juncus triformis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+uncialis&title_tag=Juncus+uncialis>Juncus uncialis</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juncus+xiphioides&title_tag=Juncus+xiphioides>Juncus xiphioides</a> (46)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Junellia+seriphioides&title_tag=Junellia+seriphioides>Junellia seriphioides</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Junellia+spathulata&title_tag=Junellia+spathulata>Junellia spathulata</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Junellia+succulentifolia&title_tag=Junellia+succulentifolia>Junellia succulentifolia</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Junellia+tridactylites&title_tag=Junellia+tridactylites>Junellia tridactylites</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+ashei&title_tag=Juniperus+ashei>Juniperus ashei</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+californica&title_tag=Juniperus+californica>Juniperus californica</a> (155)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+californicus&title_tag=Juniperus+californicus>Juniperus californicus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+cedrus+ssp.+maderensis&title_tag=Juniperus+cedrus+ssp.+maderensis>Juniperus cedrus ssp. maderensis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+chinensis&title_tag=Juniperus+chinensis>Juniperus chinensis</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+chinensis+var.+torulosa&title_tag=Juniperus+chinensis+var.+torulosa>Juniperus chinensis var. torulosa</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+communis&title_tag=Juniperus+communis>Juniperus communis</a> (30)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+communis+ssp.+alpina&title_tag=Juniperus+communis+ssp.+alpina>Juniperus communis ssp. alpina</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+communis+ssp.+communis&title_tag=Juniperus+communis+ssp.+communis>Juniperus communis ssp. communis</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+communis+var.+depressa&title_tag=Juniperus+communis+var.+depressa>Juniperus communis var. depressa</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+communis+var.+saxatilis&title_tag=Juniperus+communis+var.+saxatilis>Juniperus communis var. saxatilis</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+deppeana&title_tag=Juniperus+deppeana>Juniperus deppeana</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+deppeana+var.+pachyphlaea&title_tag=Juniperus+deppeana+var.+pachyphlaea>Juniperus deppeana var. pachyphlaea</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+durangensis&title_tag=Juniperus+durangensis>Juniperus durangensis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+flaccida&title_tag=Juniperus+flaccida>Juniperus flaccida</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+grandis&title_tag=Juniperus+grandis>Juniperus grandis</a> (41)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+horizontalis&title_tag=Juniperus+horizontalis>Juniperus horizontalis</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+monosperma&title_tag=Juniperus+monosperma>Juniperus monosperma</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+occidentalis&title_tag=Juniperus+occidentalis>Juniperus occidentalis</a> (140)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+occidentalis+var.+australis&title_tag=Juniperus+occidentalis+var.+australis>Juniperus occidentalis var. australis</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+osteosperma&title_tag=Juniperus+osteosperma>Juniperus osteosperma</a> (85)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+oxycedrus&title_tag=Juniperus+oxycedrus>Juniperus oxycedrus</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+oxycedrus+ssp.+oxycedrus&title_tag=Juniperus+oxycedrus+ssp.+oxycedrus>Juniperus oxycedrus ssp. oxycedrus</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+phoenicea&title_tag=Juniperus+phoenicea>Juniperus phoenicea</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+pinchotii&title_tag=Juniperus+pinchotii>Juniperus pinchotii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+sabina&title_tag=Juniperus+sabina>Juniperus sabina</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+scopulorum&title_tag=Juniperus+scopulorum>Juniperus scopulorum</a> (25)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+silicicola&title_tag=Juniperus+silicicola>Juniperus silicicola</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+sp.&title_tag=Juniperus+sp.>Juniperus sp.</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+squamata&title_tag=Juniperus+squamata>Juniperus squamata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+thurifera&title_tag=Juniperus+thurifera>Juniperus thurifera</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+virginiana&title_tag=Juniperus+virginiana>Juniperus virginiana</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Juniperus+virginiana+var.+virginiana&title_tag=Juniperus+virginiana+var.+virginiana>Juniperus virginiana var. virginiana</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=JuniperusÂ osteosperma&title_tag=JuniperusÂ osteosperma>JuniperusÂ osteosperma</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Jus&title_tag=Jus>Jus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justica+pilosella&title_tag=Justica+pilosella>Justica pilosella</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+americana&title_tag=Justicia+americana>Justicia americana</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+antirrhina&title_tag=Justicia+antirrhina>Justicia antirrhina</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+betonica&title_tag=Justicia+betonica>Justicia betonica</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+brandegeana&title_tag=Justicia+brandegeana>Justicia brandegeana</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+brandegeeana&title_tag=Justicia+brandegeeana>Justicia brandegeeana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+californica&title_tag=Justicia+californica>Justicia californica</a> (192)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+candicans&title_tag=Justicia+candicans>Justicia candicans</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+carnea&title_tag=Justicia+carnea>Justicia carnea</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+caudata&title_tag=Justicia+caudata>Justicia caudata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+cuneifolia&title_tag=Justicia+cuneifolia>Justicia cuneifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+fulvicoma&title_tag=Justicia+fulvicoma>Justicia fulvicoma</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+ilhensis&title_tag=Justicia+ilhensis>Justicia ilhensis</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+jujuyensis&title_tag=Justicia+jujuyensis>Justicia jujuyensis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+longii&title_tag=Justicia+longii>Justicia longii</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+palmeri&title_tag=Justicia+palmeri>Justicia palmeri</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+pilosella&title_tag=Justicia+pilosella>Justicia pilosella</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+purpusii&title_tag=Justicia+purpusii>Justicia purpusii</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Justicia+spicigera+&title_tag=Justicia+spicigera+>Justicia spicigera </a> (1)<br>
+</td>
+</tr></table>
+
+    </td>
+    </tr>
+    </table>
+
+
+<!-- bottom lt. blue section -->
+
+<tr>
+<td colspan=2 bgcolor=DFE5FA>
+    <table cellpadding=15 align=center>
+    <tr>
+    <td>
+    <br>
+    </font>
+    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+<!--- bottom section -->
+<p>
+<center>
+<table cellpadding=5 cellspacing=5>
+<tr>
+<td>
+<center>
+<a href=/>CalPhotos</a>
+ is a project of <a href=http://bnhm.berkeley.edu>BNHM</a>&nbsp;&nbsp;
+University of California, Berkeley
+<p>
+<a href=/cgi/dlpmail?step=form&subject=CalPhotos>Questions and Comments</a>
+<br>
+<small>
+
+<i>
+this page last updated: Jul 25, 2023
+<br>
+</i>
+</small>
+
+
+</table>
+</center>
+<p>
+</small>
+</font>
+</body>
+</html>
+

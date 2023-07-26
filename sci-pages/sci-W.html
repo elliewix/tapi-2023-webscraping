@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/js/calphotos.js"></script>
+<title>
+
+CalPhotos Plants: Scientific Names [W]
+
+</title>
+
+
+<style type="text/css">
+   p, td, th, body {font-family: arial, verdana, helvetica, sans-serif;}
+   p, td, th, body {font-size: 14px;}
+   a.nounderline {
+       text-decoration: none;
+       color:  white;
+       outline: none;
+    }
+    "a.subtle_link {
+       text-decoration: none;
+       font-size: 10px;
+       outline: none;
+    }
+</style>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BGCZ4BQBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1BGCZ4BQBR');
+</script>
+
+
+<!-- jquery-3.3.1.min.js used for sessions, ajax, figuring out if someone is logged in or not -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+function checkLogin() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/check_login?cgisessid=' + x, 
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/check_login?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#contributors').html(response);
+
+        },
+        error: function(xhr) {
+            $('#contributors').html('response error login');
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+function getPageContents() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/contributor_page?cgisessid=' + x,
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/contributor_page?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#links').html(response);
+        },
+        error: function(xhr) {
+            $('#links').html('response error');
+        }
+    });
+}
+</script>
+
+
+</head>
+<body bgcolor=#FFFFFF onload='checkLogin();'>
+
+<!-- colors: silver=#E6E8FA navyblu=#23238E ltblue=DFE5FA  -->
+
+<table align=center border=0 width=90% cellspacing=0 cellpadding=0>
+<!-- logo (optional) on lt. blue background -->
+<tr>
+<td width=5% bgcolor=DFE5FA>
+<!-- uncomment the following line to add a logo ----->
+<!-- img align = left border=0 height=130 src = "/calflora/icon.gif" alt = "CalFlora"-->
+<br>
+</td>
+<td align=left valign=bottom>
+    <table border=0 cellpadding=5>
+    <tr>
+    <td align=left valign=bottom>
+    <font face="Helvetica,Arial,Verdana" color=23238E>
+    <big><big><big>
+
+CalPhotos Plants: Scientific Names [W]
+
+    </big></big></big>
+    </font>
+    &nbsp;&nbsp;
+    <font face="Helvetica,Arial,Verdana" color=000000>
+    <b>
+    <!-- insert a smaller heading comment here -->
+    </b>
+    </font>
+    </td>
+    </table>
+</td>
+</tr>
+
+<!-- navy blue bar -->
+<tr>
+<td width=100% colspan=2 bgcolor=23238E align=right>
+
+<div id="contributors"></div>
+
+</td></tr>
+<!-- left side lt. blue bar with links -->
+<tr>
+<td width=10%  bgcolor=DFE5FA align=center valign=top>
+&nbsp;<p>
+<font face="Helvetica,Arial,Verdana">
+<p>
+<small>
+
+
+</small>
+</font>
+</td>
+<!-- main menu -->
+<td valign=top>
+    <table cellpadding=5 width=100%>
+    <tr>
+    <td valign=top>
+    <font face="Helvetica,Arial,Verdana">
+
+<center><i>Back to: <a href=/>CalPhotos</a> > <a href=/flora/>Plants</a> > Browse Scientific Names [W]</i></center><p><p><center>Last updated: Jul 25 2023</center><p>
+<p>see also: <a href=/browse_imgs/plant.html>Browse Thumbnail Photos of Plants</a><p>
+<table width=100%><tr>
+<td valign=top><b>Wachendorfia - Weigela</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wachendorfia+paniculata&title_tag=Wachendorfia+paniculata>Wachendorfia paniculata</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wachendorfia+thyrsiflora&title_tag=Wachendorfia+thyrsiflora>Wachendorfia thyrsiflora</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+annularis&title_tag=Wahlenbergia+annularis>Wahlenbergia annularis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+berteroi&title_tag=Wahlenbergia+berteroi>Wahlenbergia berteroi</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+capensis&title_tag=Wahlenbergia+capensis>Wahlenbergia capensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+communis&title_tag=Wahlenbergia+communis>Wahlenbergia communis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+cuspidata&title_tag=Wahlenbergia+cuspidata>Wahlenbergia cuspidata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+fasciculata&title_tag=Wahlenbergia+fasciculata>Wahlenbergia fasciculata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+fernadeziana&title_tag=Wahlenbergia+fernadeziana>Wahlenbergia fernadeziana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+gracilis&title_tag=Wahlenbergia+gracilis>Wahlenbergia gracilis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+grandiflora&title_tag=Wahlenbergia+grandiflora>Wahlenbergia grandiflora</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+marginata&title_tag=Wahlenbergia+marginata>Wahlenbergia marginata</a> (58)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+oxyphylla&title_tag=Wahlenbergia+oxyphylla>Wahlenbergia oxyphylla</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+sp.&title_tag=Wahlenbergia+sp.>Wahlenbergia sp.</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wahlenbergia+undulata&title_tag=Wahlenbergia+undulata>Wahlenbergia undulata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Waldsteinia+fragarioides&title_tag=Waldsteinia+fragarioides>Waldsteinia fragarioides</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Waldsteinia+idahoensis&title_tag=Waldsteinia+idahoensis>Waldsteinia idahoensis</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wallichia+disticha&title_tag=Wallichia+disticha>Wallichia disticha</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Waltheria+indica&title_tag=Waltheria+indica>Waltheria indica</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Waltheria+ovata&title_tag=Waltheria+ovata>Waltheria ovata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Waltzia+suaveolens&title_tag=Waltzia+suaveolens>Waltzia suaveolens</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Warburgia+salutaris&title_tag=Warburgia+salutaris>Warburgia salutaris</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Warnstorfia+exannulata&title_tag=Warnstorfia+exannulata>Warnstorfia exannulata</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Warscewiczia+coccinea&title_tag=Warscewiczia+coccinea>Warscewiczia coccinea</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Washingtonia+filifera&title_tag=Washingtonia+filifera>Washingtonia filifera</a> (124)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Washingtonia+filifolia&title_tag=Washingtonia+filifolia>Washingtonia filifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Washingtonia+robusta&title_tag=Washingtonia+robusta>Washingtonia robusta</a> (34)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Washingtonia+sp.&title_tag=Washingtonia+sp.>Washingtonia sp.</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Watsonia+borbonica&title_tag=Watsonia+borbonica>Watsonia borbonica</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Watsonia+meriana&title_tag=Watsonia+meriana>Watsonia meriana</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Watsonia+meriana+var.+bulbillifera&title_tag=Watsonia+meriana+var.+bulbillifera>Watsonia meriana var. bulbillifera</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Watsonia+sp.&title_tag=Watsonia+sp.>Watsonia sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wedelia+acapulcensis+var.+hispida&title_tag=Wedelia+acapulcensis+var.+hispida>Wedelia acapulcensis var. hispida</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wedelia+chihuahuana&title_tag=Wedelia+chihuahuana>Wedelia chihuahuana</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wedelia+hispida&title_tag=Wedelia+hispida>Wedelia hispida</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wedelia+texana&title_tag=Wedelia+texana>Wedelia texana</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wedelia+trilobata&title_tag=Wedelia+trilobata>Wedelia trilobata</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weigela+coraeensis&title_tag=Weigela+coraeensis>Weigela coraeensis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weigela+florida&title_tag=Weigela+florida>Weigela florida</a> (9)<br>
+</td>
+<td valign=top><b>Weigela - Wolffia</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weigela+praecox&title_tag=Weigela+praecox>Weigela praecox</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weigela+sp.&title_tag=Weigela+sp.>Weigela sp.</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weigela+X+briant+rubidor&title_tag=Weigela+X+briant+rubidor>Weigela X briant rubidor</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weingartia+hediniana&title_tag=Weingartia+hediniana>Weingartia hediniana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weingartia+neocumingii&title_tag=Weingartia+neocumingii>Weingartia neocumingii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weinmannia+parviflora&title_tag=Weinmannia+parviflora>Weinmannia parviflora</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weinmannia+pinnata&title_tag=Weinmannia+pinnata>Weinmannia pinnata</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weinmannia+racemosa&title_tag=Weinmannia+racemosa>Weinmannia racemosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weinmannia+trichosperma&title_tag=Weinmannia+trichosperma>Weinmannia trichosperma</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weissia+controversa&title_tag=Weissia+controversa>Weissia controversa</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Weldenia+candida&title_tag=Weldenia+candida>Weldenia candida</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Welwitschia+mirabilis&title_tag=Welwitschia+mirabilis>Welwitschia mirabilis</a> (38)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wercklea+ferox&title_tag=Wercklea+ferox>Wercklea ferox</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Werneria+nubigena&title_tag=Werneria+nubigena>Werneria nubigena</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Westringa+fruticosa&title_tag=Westringa+fruticosa>Westringa fruticosa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Westringia+brevifolia&title_tag=Westringia+brevifolia>Westringia brevifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Westringia+dampieri&title_tag=Westringia+dampieri>Westringia dampieri</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Westringia+fruticosa&title_tag=Westringia+fruticosa>Westringia fruticosa</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Whipplea+modesta&title_tag=Whipplea+modesta>Whipplea modesta</a> (72)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Whitesloanea+crassa&title_tag=Whitesloanea+crassa>Whitesloanea crassa</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Whitfieldia+elongata&title_tag=Whitfieldia+elongata>Whitfieldia elongata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wibelia+denticulata&title_tag=Wibelia+denticulata>Wibelia denticulata</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Widdringtonia+nodiflora&title_tag=Widdringtonia+nodiflora>Widdringtonia nodiflora</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wigandia+caracasana&title_tag=Wigandia+caracasana>Wigandia caracasana</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wigandia+urens&title_tag=Wigandia+urens>Wigandia urens</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wigginsia+paucioreolatus&title_tag=Wigginsia+paucioreolatus>Wigginsia paucioreolatus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wikstroemia+phillyreifolia&title_tag=Wikstroemia+phillyreifolia>Wikstroemia phillyreifolia</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wilkesia+gymnoxiphium&title_tag=Wilkesia+gymnoxiphium>Wilkesia gymnoxiphium</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wilkesia+hobdyi&title_tag=Wilkesia+hobdyi>Wilkesia hobdyi</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wislizenia+refracta&title_tag=Wislizenia+refracta>Wislizenia refracta</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wislizenia+refracta+ssp.+californica&title_tag=Wislizenia+refracta+ssp.+californica>Wislizenia refracta ssp. californica</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wislizenia+refracta+ssp.+palmeri&title_tag=Wislizenia+refracta+ssp.+palmeri>Wislizenia refracta ssp. palmeri</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wislizenia+refracta+ssp.+refracta&title_tag=Wislizenia+refracta+ssp.+refracta>Wislizenia refracta ssp. refracta</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wisteria+floribunda&title_tag=Wisteria+floribunda>Wisteria floribunda</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wisteria+japonica&title_tag=Wisteria+japonica>Wisteria japonica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wisteria+sinensis&title_tag=Wisteria+sinensis>Wisteria sinensis</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wisteria+sp.&title_tag=Wisteria+sp.>Wisteria sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wodyetia+bifurcata&title_tag=Wodyetia+bifurcata>Wodyetia bifurcata</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wolffia+borealis&title_tag=Wolffia+borealis>Wolffia borealis</a> (5)<br>
+</td>
+<td valign=top><b>Wolffia - Wyethia</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wolffia+brasiliensis&title_tag=Wolffia+brasiliensis>Wolffia brasiliensis</a> (25)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wolffia+columbiana&title_tag=Wolffia+columbiana>Wolffia columbiana</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wolffia+globosa&title_tag=Wolffia+globosa>Wolffia globosa</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wolffia+sp.&title_tag=Wolffia+sp.>Wolffia sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wollemia+nobilis&title_tag=Wollemia+nobilis>Wollemia nobilis</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+ilvensis+&title_tag=Woodsia+ilvensis+>Woodsia ilvensis </a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+mexiae&title_tag=Woodsia+mexiae>Woodsia mexiae</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+montevidensis&title_tag=Woodsia+montevidensis>Woodsia montevidensis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+obtusa&title_tag=Woodsia+obtusa>Woodsia obtusa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+oregana&title_tag=Woodsia+oregana>Woodsia oregana</a> (41)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+plummerae&title_tag=Woodsia+plummerae>Woodsia plummerae</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodsia+scopulina&title_tag=Woodsia+scopulina>Woodsia scopulina</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodwardia+fimbriata&title_tag=Woodwardia+fimbriata>Woodwardia fimbriata</a> (69)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodwardia+semicordata&title_tag=Woodwardia+semicordata>Woodwardia semicordata</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodwardia+unigemmata&title_tag=Woodwardia+unigemmata>Woodwardia unigemmata</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woodwardia+virginica&title_tag=Woodwardia+virginica>Woodwardia virginica</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Woollsia+pungens&title_tag=Woollsia+pungens>Woollsia pungens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wrangelia+argus&title_tag=Wrangelia+argus>Wrangelia argus</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wrightia+antidysenterica&title_tag=Wrightia+antidysenterica>Wrightia antidysenterica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wrightia+natalensis&title_tag=Wrightia+natalensis>Wrightia natalensis</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wrightia+religiosa&title_tag=Wrightia+religiosa>Wrightia religiosa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+amplexicaulis&title_tag=Wyethia+amplexicaulis>Wyethia amplexicaulis</a> (30)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+angustifloria&title_tag=Wyethia+angustifloria>Wyethia angustifloria</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+angustifolia&title_tag=Wyethia+angustifolia>Wyethia angustifolia</a> (171)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+arizonica&title_tag=Wyethia+arizonica>Wyethia arizonica</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+bolanderi&title_tag=Wyethia+bolanderi>Wyethia bolanderi</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+elata&title_tag=Wyethia+elata>Wyethia elata</a> (70)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+glabra&title_tag=Wyethia+glabra>Wyethia glabra</a> (65)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+helenioides&title_tag=Wyethia+helenioides>Wyethia helenioides</a> (93)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+helianthoides&title_tag=Wyethia+helianthoides>Wyethia helianthoides</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+invenusta&title_tag=Wyethia+invenusta>Wyethia invenusta</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+longicaulis&title_tag=Wyethia+longicaulis>Wyethia longicaulis</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+mollis&title_tag=Wyethia+mollis>Wyethia mollis</a> (127)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+ovata&title_tag=Wyethia+ovata>Wyethia ovata</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+reticulata&title_tag=Wyethia+reticulata>Wyethia reticulata</a> (38)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+scabra&title_tag=Wyethia+scabra>Wyethia scabra</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Wyethia+sp.&title_tag=Wyethia+sp.>Wyethia sp.</a> (6)<br>
+</td>
+</tr></table>
+
+    </td>
+    </tr>
+    </table>
+
+
+<!-- bottom lt. blue section -->
+
+<tr>
+<td colspan=2 bgcolor=DFE5FA>
+    <table cellpadding=15 align=center>
+    <tr>
+    <td>
+    <br>
+    </font>
+    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+<!--- bottom section -->
+<p>
+<center>
+<table cellpadding=5 cellspacing=5>
+<tr>
+<td>
+<center>
+<a href=/>CalPhotos</a>
+ is a project of <a href=http://bnhm.berkeley.edu>BNHM</a>&nbsp;&nbsp;
+University of California, Berkeley
+<p>
+<a href=/cgi/dlpmail?step=form&subject=CalPhotos>Questions and Comments</a>
+<br>
+<small>
+
+<i>
+this page last updated: Jul 25, 2023
+<br>
+</i>
+</small>
+
+
+</table>
+</center>
+<p>
+</small>
+</font>
+</body>
+</html>
+

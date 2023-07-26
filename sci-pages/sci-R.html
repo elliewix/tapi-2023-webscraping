@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/js/calphotos.js"></script>
+<title>
+
+CalPhotos Plants: Scientific Names [R]
+
+</title>
+
+
+<style type="text/css">
+   p, td, th, body {font-family: arial, verdana, helvetica, sans-serif;}
+   p, td, th, body {font-size: 14px;}
+   a.nounderline {
+       text-decoration: none;
+       color:  white;
+       outline: none;
+    }
+    "a.subtle_link {
+       text-decoration: none;
+       font-size: 10px;
+       outline: none;
+    }
+</style>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BGCZ4BQBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1BGCZ4BQBR');
+</script>
+
+
+<!-- jquery-3.3.1.min.js used for sessions, ajax, figuring out if someone is logged in or not -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+function checkLogin() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/check_login?cgisessid=' + x, 
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/check_login?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#contributors').html(response);
+
+        },
+        error: function(xhr) {
+            $('#contributors').html('response error login');
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+function getPageContents() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/contributor_page?cgisessid=' + x,
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/contributor_page?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#links').html(response);
+        },
+        error: function(xhr) {
+            $('#links').html('response error');
+        }
+    });
+}
+</script>
+
+
+</head>
+<body bgcolor=#FFFFFF onload='checkLogin();'>
+
+<!-- colors: silver=#E6E8FA navyblu=#23238E ltblue=DFE5FA  -->
+
+<table align=center border=0 width=90% cellspacing=0 cellpadding=0>
+<!-- logo (optional) on lt. blue background -->
+<tr>
+<td width=5% bgcolor=DFE5FA>
+<!-- uncomment the following line to add a logo ----->
+<!-- img align = left border=0 height=130 src = "/calflora/icon.gif" alt = "CalFlora"-->
+<br>
+</td>
+<td align=left valign=bottom>
+    <table border=0 cellpadding=5>
+    <tr>
+    <td align=left valign=bottom>
+    <font face="Helvetica,Arial,Verdana" color=23238E>
+    <big><big><big>
+
+CalPhotos Plants: Scientific Names [R]
+
+    </big></big></big>
+    </font>
+    &nbsp;&nbsp;
+    <font face="Helvetica,Arial,Verdana" color=000000>
+    <b>
+    <!-- insert a smaller heading comment here -->
+    </b>
+    </font>
+    </td>
+    </table>
+</td>
+</tr>
+
+<!-- navy blue bar -->
+<tr>
+<td width=100% colspan=2 bgcolor=23238E align=right>
+
+<div id="contributors"></div>
+
+</td></tr>
+<!-- left side lt. blue bar with links -->
+<tr>
+<td width=10%  bgcolor=DFE5FA align=center valign=top>
+&nbsp;<p>
+<font face="Helvetica,Arial,Verdana">
+<p>
+<small>
+
+
+</small>
+</font>
+</td>
+<!-- main menu -->
+<td valign=top>
+    <table cellpadding=5 width=100%>
+    <tr>
+    <td valign=top>
+    <font face="Helvetica,Arial,Verdana">
+
+<center><i>Back to: <a href=/>CalPhotos</a> > <a href=/flora/>Plants</a> > Browse Scientific Names [R]</i></center><p><p><center>Last updated: Jul 25 2023</center><p>
+<p>see also: <a href=/browse_imgs/plant.html>Browse Thumbnail Photos of Plants</a><p>
+<table width=100%><tr>
+<td valign=top><b>Rabdosiella - Rhizomnium</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rabdosiella+calycina&title_tag=Rabdosiella+calycina>Rabdosiella calycina</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rabelera+holostea&title_tag=Rabelera+holostea>Rabelera holostea</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Racinea+fraseri&title_tag=Racinea+fraseri>Racinea fraseri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Racomitrium+brevipes&title_tag=Racomitrium+brevipes>Racomitrium brevipes</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Racomitrium+depressum&title_tag=Racomitrium+depressum>Racomitrium depressum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Racomitrium+lanuginosum&title_tag=Racomitrium+lanuginosum>Racomitrium lanuginosum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Racomitrium+molle&title_tag=Racomitrium+molle>Racomitrium molle</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Racomitrium+ryszardii&title_tag=Racomitrium+ryszardii>Racomitrium ryszardii</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Radermachera+sinica&title_tag=Radermachera+sinica>Radermachera sinica</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Radermachera+sinica+(Syn.+Stereopermum+sinicum)&title_tag=Radermachera+sinica+(Syn.+Stereopermum+sinicum)>Radermachera sinica (Syn. Stereopermum sinicum)</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Radula+complanata&title_tag=Radula+complanata>Radula complanata</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raffenaldia+primuloides&title_tag=Raffenaldia+primuloides>Raffenaldia primuloides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rafinesquia+californica&title_tag=Rafinesquia+californica>Rafinesquia californica</a> (89)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rafinesquia+neomexicana&title_tag=Rafinesquia+neomexicana>Rafinesquia neomexicana</a> (157)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rafnia+capensis+ssp.+pedicellata&title_tag=Rafnia+capensis+ssp.+pedicellata>Rafnia capensis ssp. pedicellata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raillardella+argentea&title_tag=Raillardella+argentea>Raillardella argentea</a> (91)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raillardella+pringlei&title_tag=Raillardella+pringlei>Raillardella pringlei</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raillardella+scaposa&title_tag=Raillardella+scaposa>Raillardella scaposa</a> (36)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rainiera+stricta&title_tag=Rainiera+stricta>Rainiera stricta</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ralfsia+expansa&title_tag=Ralfsia+expansa>Ralfsia expansa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ramalina+menziesii&title_tag=Ramalina+menziesii>Ramalina menziesii</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ramariopsis+kunzei&title_tag=Ramariopsis+kunzei>Ramariopsis kunzei</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ramonda+nathaliae&title_tag=Ramonda+nathaliae>Ramonda nathaliae</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ramonda+nathaliae+ssp.+alba&title_tag=Ramonda+nathaliae+ssp.+alba>Ramonda nathaliae ssp. alba</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ramonda+serbica&title_tag=Ramonda+serbica>Ramonda serbica</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Randia+echinocarpa&title_tag=Randia+echinocarpa>Randia echinocarpa</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Randia+obcordata&title_tag=Randia+obcordata>Randia obcordata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Randia+thurberi&title_tag=Randia+thurberi>Randia thurberi</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranuncululs+muricatus&title_tag=Ranuncululs+muricatus>Ranuncululs muricatus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+abortivus&title_tag=Ranunculus+abortivus>Ranunculus abortivus</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+aconitifolius&title_tag=Ranunculus+aconitifolius>Ranunculus aconitifolius</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+acris&title_tag=Ranunculus+acris>Ranunculus acris</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+acris+ssp.+acris&title_tag=Ranunculus+acris+ssp.+acris>Ranunculus acris ssp. acris</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+acris+ssp.+friesianus&title_tag=Ranunculus+acris+ssp.+friesianus>Ranunculus acris ssp. friesianus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+adoneus&title_tag=Ranunculus+adoneus>Ranunculus adoneus</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+alismifolius&title_tag=Ranunculus+alismifolius>Ranunculus alismifolius</a> (42)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+alismifolius+var.+alismellus&title_tag=Ranunculus+alismifolius+var.+alismellus>Ranunculus alismifolius var. alismellus</a> (31)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+alismifolius+var.+alismifolius&title_tag=Ranunculus+alismifolius+var.+alismifolius>Ranunculus alismifolius var. alismifolius</a> (45)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+alismifolius+var.+montanus&title_tag=Ranunculus+alismifolius+var.+montanus>Ranunculus alismifolius var. montanus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+allismifolius+var.+alismellus&title_tag=Ranunculus+allismifolius+var.+alismellus>Ranunculus allismifolius var. alismellus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+alpestris&title_tag=Ranunculus+alpestris>Ranunculus alpestris</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+andersonii&title_tag=Ranunculus+andersonii>Ranunculus andersonii</a> (46)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+andersonii+var.+andersonii&title_tag=Ranunculus+andersonii+var.+andersonii>Ranunculus andersonii var. andersonii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+aquatilis&title_tag=Ranunculus+aquatilis>Ranunculus aquatilis</a> (48)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+aquatilis+var.+aquatilis&title_tag=Ranunculus+aquatilis+var.+aquatilis>Ranunculus aquatilis var. aquatilis</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+aquatilis+var.+capillaceus&title_tag=Ranunculus+aquatilis+var.+capillaceus>Ranunculus aquatilis var. capillaceus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+aquatilis+var.+diffusus&title_tag=Ranunculus+aquatilis+var.+diffusus>Ranunculus aquatilis var. diffusus</a> (47)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+arizonicus&title_tag=Ranunculus+arizonicus>Ranunculus arizonicus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+arvensis&title_tag=Ranunculus+arvensis>Ranunculus arvensis</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+asiaticus&title_tag=Ranunculus+asiaticus>Ranunculus asiaticus</a> (49)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+auricomus&title_tag=Ranunculus+auricomus>Ranunculus auricomus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+austro-oreganus&title_tag=Ranunculus+austro-oreganus>Ranunculus austro-oreganus</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+bonariensis&title_tag=Ranunculus+bonariensis>Ranunculus bonariensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+bonariensis+var.+trisepalus&title_tag=Ranunculus+bonariensis+var.+trisepalus>Ranunculus bonariensis var. trisepalus</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+bulbosus&title_tag=Ranunculus+bulbosus>Ranunculus bulbosus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+bullatus&title_tag=Ranunculus+bullatus>Ranunculus bullatus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+californicus&title_tag=Ranunculus+californicus>Ranunculus californicus</a> (109)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+californicus+ssp.+californicus&title_tag=Ranunculus+californicus+ssp.+californicus>Ranunculus californicus ssp. californicus</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+californicus+var.+californicus&title_tag=Ranunculus+californicus+var.+californicus>Ranunculus californicus var. californicus</a> (46)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+californicus+var.+cuneatus&title_tag=Ranunculus+californicus+var.+cuneatus>Ranunculus californicus var. cuneatus</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+canus&title_tag=Ranunculus+canus>Ranunculus canus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+canus+var.+canus&title_tag=Ranunculus+canus+var.+canus>Ranunculus canus var. canus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+cardiophyllus&title_tag=Ranunculus+cardiophyllus>Ranunculus cardiophyllus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+carinthiacus&title_tag=Ranunculus+carinthiacus>Ranunculus carinthiacus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+carolinianus&title_tag=Ranunculus+carolinianus>Ranunculus carolinianus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+chius&title_tag=Ranunculus+chius>Ranunculus chius</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+cortusifolius&title_tag=Ranunculus+cortusifolius>Ranunculus cortusifolius</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+cortusifolius+ssp.+major&title_tag=Ranunculus+cortusifolius+ssp.+major>Ranunculus cortusifolius ssp. major</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+crenatus&title_tag=Ranunculus+crenatus>Ranunculus crenatus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+cymbalaria&title_tag=Ranunculus+cymbalaria>Ranunculus cymbalaria</a> (64)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+cymbalaria+var.+saximontanus&title_tag=Ranunculus+cymbalaria+var.+saximontanus>Ranunculus cymbalaria var. saximontanus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+eschscholtzii&title_tag=Ranunculus+eschscholtzii>Ranunculus eschscholtzii</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+eschscholtzii+var.+oxynotus&title_tag=Ranunculus+eschscholtzii+var.+oxynotus>Ranunculus eschscholtzii var. oxynotus</a> (39)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+eschscholtzii+var.+suksdorfii&title_tag=Ranunculus+eschscholtzii+var.+suksdorfii>Ranunculus eschscholtzii var. suksdorfii</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+fascicularis+&title_tag=Ranunculus+fascicularis+>Ranunculus fascicularis </a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+ficaria&title_tag=Ranunculus+ficaria>Ranunculus ficaria</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+ficaria+ssp.+bulbilifer&title_tag=Ranunculus+ficaria+ssp.+bulbilifer>Ranunculus ficaria ssp. bulbilifer</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+ficaria+ssp.+ficariiformis&title_tag=Ranunculus+ficaria+ssp.+ficariiformis>Ranunculus ficaria ssp. ficariiformis</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+flabellaris&title_tag=Ranunculus+flabellaris>Ranunculus flabellaris</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+flabellatus&title_tag=Ranunculus+flabellatus>Ranunculus flabellatus</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+flammula&title_tag=Ranunculus+flammula>Ranunculus flammula</a> (34)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+flammula+var.+ovalis&title_tag=Ranunculus+flammula+var.+ovalis>Ranunculus flammula var. ovalis</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+gentryanus&title_tag=Ranunculus+gentryanus>Ranunculus gentryanus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+glaberrimus&title_tag=Ranunculus+glaberrimus>Ranunculus glaberrimus</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+glaberrimus+var.+ellipticus&title_tag=Ranunculus+glaberrimus+var.+ellipticus>Ranunculus glaberrimus var. ellipticus</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+glaberrimus+var.+glaberrimus&title_tag=Ranunculus+glaberrimus+var.+glaberrimus>Ranunculus glaberrimus var. glaberrimus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+glacialis&title_tag=Ranunculus+glacialis>Ranunculus glacialis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+gmelinii&title_tag=Ranunculus+gmelinii>Ranunculus gmelinii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+gormanii&title_tag=Ranunculus+gormanii>Ranunculus gormanii</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hawaiensis&title_tag=Ranunculus+hawaiensis>Ranunculus hawaiensis</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hebecarpus&title_tag=Ranunculus+hebecarpus>Ranunculus hebecarpus</a> (49)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hederaceus&title_tag=Ranunculus+hederaceus>Ranunculus hederaceus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hispidus+var.+caricetorum&title_tag=Ranunculus+hispidus+var.+caricetorum>Ranunculus hispidus var. caricetorum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hispidus+var.+nitidus+&title_tag=Ranunculus+hispidus+var.+nitidus+>Ranunculus hispidus var. nitidus </a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hybridus&title_tag=Ranunculus+hybridus>Ranunculus hybridus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hydrocharoides&title_tag=Ranunculus+hydrocharoides>Ranunculus hydrocharoides</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+hystriculus&title_tag=Ranunculus+hystriculus>Ranunculus hystriculus</a> (54)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+inamoenus+var.+alpeophilus&title_tag=Ranunculus+inamoenus+var.+alpeophilus>Ranunculus inamoenus var. alpeophilus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+inamoenus+var.+inamoenus&title_tag=Ranunculus+inamoenus+var.+inamoenus>Ranunculus inamoenus var. inamoenus</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+jovis&title_tag=Ranunculus+jovis>Ranunculus jovis</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+kuepferi&title_tag=Ranunculus+kuepferi>Ranunculus kuepferi</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+lanuginosus&title_tag=Ranunculus+lanuginosus>Ranunculus lanuginosus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+lingua&title_tag=Ranunculus+lingua>Ranunculus lingua</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+lobbii&title_tag=Ranunculus+lobbii>Ranunculus lobbii</a> (35)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+lobii&title_tag=Ranunculus+lobii>Ranunculus lobii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+longirostris&title_tag=Ranunculus+longirostris>Ranunculus longirostris</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+lyallii&title_tag=Ranunculus+lyallii>Ranunculus lyallii</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+macounii&title_tag=Ranunculus+macounii>Ranunculus macounii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+macranthus&title_tag=Ranunculus+macranthus>Ranunculus macranthus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+micrantha&title_tag=Ranunculus+micrantha>Ranunculus micrantha</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+montanus&title_tag=Ranunculus+montanus>Ranunculus montanus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+muricatus&title_tag=Ranunculus+muricatus>Ranunculus muricatus</a> (84)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+nivalis&title_tag=Ranunculus+nivalis>Ranunculus nivalis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+nivealis&title_tag=Ranunculus+nivealis>Ranunculus nivealis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+occidentalis&title_tag=Ranunculus+occidentalis>Ranunculus occidentalis</a> (83)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+occidentalis+var.+dissectus&title_tag=Ranunculus+occidentalis+var.+dissectus>Ranunculus occidentalis var. dissectus</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+occidentalis+var.+occidentalis&title_tag=Ranunculus+occidentalis+var.+occidentalis>Ranunculus occidentalis var. occidentalis</a> (33)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+occidentalis+var.+ultramontanus&title_tag=Ranunculus+occidentalis+var.+ultramontanus>Ranunculus occidentalis var. ultramontanus</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+omiophyllus&title_tag=Ranunculus+omiophyllus>Ranunculus omiophyllus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+orthorhynchus&title_tag=Ranunculus+orthorhynchus>Ranunculus orthorhynchus</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+orthorhynchus+var.+bloomeri&title_tag=Ranunculus+orthorhynchus+var.+bloomeri>Ranunculus orthorhynchus var. bloomeri</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+orthorhynchus+var.+orthorhynchus&title_tag=Ranunculus+orthorhynchus+var.+orthorhynchus>Ranunculus orthorhynchus var. orthorhynchus</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+orthorhynchus+var.+platyphyllus&title_tag=Ranunculus+orthorhynchus+var.+platyphyllus>Ranunculus orthorhynchus var. platyphyllus</a> (25)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+parnassifolius&title_tag=Ranunculus+parnassifolius>Ranunculus parnassifolius</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+parviflorus&title_tag=Ranunculus+parviflorus>Ranunculus parviflorus</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+peduncularis&title_tag=Ranunculus+peduncularis>Ranunculus peduncularis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+peltatus&title_tag=Ranunculus+peltatus>Ranunculus peltatus</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+platanifolius&title_tag=Ranunculus+platanifolius>Ranunculus platanifolius</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+pusillus&title_tag=Ranunculus+pusillus>Ranunculus pusillus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+recurvatus&title_tag=Ranunculus+recurvatus>Ranunculus recurvatus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+repens&title_tag=Ranunculus+repens>Ranunculus repens</a> (64)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+rhomboideus+&title_tag=Ranunculus+rhomboideus+>Ranunculus rhomboideus </a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+sardous&title_tag=Ranunculus+sardous>Ranunculus sardous</a> (39)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+sceleratus&title_tag=Ranunculus+sceleratus>Ranunculus sceleratus</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+sceleratus+var.+multifidus&title_tag=Ranunculus+sceleratus+var.+multifidus>Ranunculus sceleratus var. multifidus</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+sceleratus+var.+sceleratus&title_tag=Ranunculus+sceleratus+var.+sceleratus>Ranunculus sceleratus var. sceleratus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+scleratus&title_tag=Ranunculus+scleratus>Ranunculus scleratus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+seguieri&title_tag=Ranunculus+seguieri>Ranunculus seguieri</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+sp.&title_tag=Ranunculus+sp.>Ranunculus sp.</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+suksdorfii&title_tag=Ranunculus+suksdorfii>Ranunculus suksdorfii</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+sulphureus&title_tag=Ranunculus+sulphureus>Ranunculus sulphureus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+testiculatus&title_tag=Ranunculus+testiculatus>Ranunculus testiculatus</a> (33)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+traunfellneri&title_tag=Ranunculus+traunfellneri>Ranunculus traunfellneri</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+trichophyllus&title_tag=Ranunculus+trichophyllus>Ranunculus trichophyllus</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunculus+uncinatus&title_tag=Ranunculus+uncinatus>Ranunculus uncinatus</a> (31)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ranunuculus+occidentalis&title_tag=Ranunuculus+occidentalis>Ranunuculus occidentalis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raoulia+glabra&title_tag=Raoulia+glabra>Raoulia glabra</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raoulia+hookeri&title_tag=Raoulia+hookeri>Raoulia hookeri</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rapanea+melanophloeos&title_tag=Rapanea+melanophloeos>Rapanea melanophloeos</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rapanea+punctata&title_tag=Rapanea+punctata>Rapanea punctata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+raphanistrum&title_tag=Raphanus+raphanistrum>Raphanus raphanistrum</a> (37)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+raphanistrum+ssp.+maritimus&title_tag=Raphanus+raphanistrum+ssp.+maritimus>Raphanus raphanistrum ssp. maritimus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+sativus&title_tag=Raphanus+sativus>Raphanus sativus</a> (148)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+sativus+cf.+var.+longipinnatus&title_tag=Raphanus+sativus+cf.+var.+longipinnatus>Raphanus sativus cf. var. longipinnatus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+sativus+var.+daikon&title_tag=Raphanus+sativus+var.+daikon>Raphanus sativus var. daikon</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+sativus+var.+longipinnatus&title_tag=Raphanus+sativus+var.+longipinnatus>Raphanus sativus var. longipinnatus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphanus+sp.&title_tag=Raphanus+sp.>Raphanus sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphia+australis&title_tag=Raphia+australis>Raphia australis</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Raphiolepis+umbellata&title_tag=Raphiolepis+umbellata>Raphiolepis umbellata</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rapistrum+rugosum&title_tag=Rapistrum+rugosum>Rapistrum rugosum</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ratibida+columnifera&title_tag=Ratibida+columnifera>Ratibida columnifera</a> (35)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ratibida+columnifera+var.+pulcherrima&title_tag=Ratibida+columnifera+var.+pulcherrima>Ratibida columnifera var. pulcherrima</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ratibida+mexicana&title_tag=Ratibida+mexicana>Ratibida mexicana</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ratibida+pinnata&title_tag=Ratibida+pinnata>Ratibida pinnata</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ratibida+tagetes&title_tag=Ratibida+tagetes>Ratibida tagetes</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rauvolfia+caffra&title_tag=Rauvolfia+caffra>Rauvolfia caffra</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rauvolfia+grandiflora&title_tag=Rauvolfia+grandiflora>Rauvolfia grandiflora</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rauvolfia+samarensis&title_tag=Rauvolfia+samarensis>Rauvolfia samarensis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ravenala+madagascariensis&title_tag=Ravenala+madagascariensis>Ravenala madagascariensis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ravenea+rivularis&title_tag=Ravenea+rivularis>Ravenea rivularis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ravenella+angustiflora&title_tag=Ravenella+angustiflora>Ravenella angustiflora</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rawsonia+lucida&title_tag=Rawsonia+lucida>Rawsonia lucida</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rayjacksonia+phyllocephala&title_tag=Rayjacksonia+phyllocephala>Rayjacksonia phyllocephala</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rbinia+x+ambigua&title_tag=Rbinia+x+ambigua>Rbinia x ambigua</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+albida&title_tag=Rebutia+albida>Rebutia albida</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+albipilosa&title_tag=Rebutia+albipilosa>Rebutia albipilosa</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+arenacea&title_tag=Rebutia+arenacea>Rebutia arenacea</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+canigueralii&title_tag=Rebutia+canigueralii>Rebutia canigueralii</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+cardenasiana&title_tag=Rebutia+cardenasiana>Rebutia cardenasiana</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+cintia&title_tag=Rebutia+cintia>Rebutia cintia</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+deminuta+ssp.+deminuta&title_tag=Rebutia+deminuta+ssp.+deminuta>Rebutia deminuta ssp. deminuta</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+einsteinii&title_tag=Rebutia+einsteinii>Rebutia einsteinii</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+fiebrigii&title_tag=Rebutia+fiebrigii>Rebutia fiebrigii</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+flavistyla&title_tag=Rebutia+flavistyla>Rebutia flavistyla</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+fulviseta&title_tag=Rebutia+fulviseta>Rebutia fulviseta</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+heliosa&title_tag=Rebutia+heliosa>Rebutia heliosa</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+ithyacantha&title_tag=Rebutia+ithyacantha>Rebutia ithyacantha</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+krainziana&title_tag=Rebutia+krainziana>Rebutia krainziana</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+langerii&title_tag=Rebutia+langerii>Rebutia langerii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+marsoneri&title_tag=Rebutia+marsoneri>Rebutia marsoneri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+mentosa&title_tag=Rebutia+mentosa>Rebutia mentosa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+minuscula&title_tag=Rebutia+minuscula>Rebutia minuscula</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+mixticolor&title_tag=Rebutia+mixticolor>Rebutia mixticolor</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+muscala&title_tag=Rebutia+muscala>Rebutia muscala</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+muscula&title_tag=Rebutia+muscula>Rebutia muscula</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+narvacense&title_tag=Rebutia+narvacense>Rebutia narvacense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+neocumingii&title_tag=Rebutia+neocumingii>Rebutia neocumingii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+pulchra&title_tag=Rebutia+pulchra>Rebutia pulchra</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+pygmaea&title_tag=Rebutia+pygmaea>Rebutia pygmaea</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+senilis&title_tag=Rebutia+senilis>Rebutia senilis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+sp.&title_tag=Rebutia+sp.>Rebutia sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+steinbachii&title_tag=Rebutia+steinbachii>Rebutia steinbachii</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+steinbachii+ssp.+verticillacantha&title_tag=Rebutia+steinbachii+ssp.+verticillacantha>Rebutia steinbachii ssp. verticillacantha</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+tamboensis&title_tag=Rebutia+tamboensis>Rebutia tamboensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+tuberiflora&title_tag=Rebutia+tuberiflora>Rebutia tuberiflora</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+vulpina&title_tag=Rebutia+vulpina>Rebutia vulpina</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rebutia+wessneriana&title_tag=Rebutia+wessneriana>Rebutia wessneriana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Red+maids&title_tag=Red+maids>Red maids</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Regnellidium+diphyllum&title_tag=Regnellidium+diphyllum>Regnellidium diphyllum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rehderodendron+gongshanense&title_tag=Rehderodendron+gongshanense>Rehderodendron gongshanense</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rehmannia+chingii&title_tag=Rehmannia+chingii>Rehmannia chingii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rehmannia+elata&title_tag=Rehmannia+elata>Rehmannia elata</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rehmannia+integra&title_tag=Rehmannia+integra>Rehmannia integra</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rehmannia+piasezkii&title_tag=Rehmannia+piasezkii>Rehmannia piasezkii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reichardia+picroides&title_tag=Reichardia+picroides>Reichardia picroides</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reichardia+tingitana&title_tag=Reichardia+tingitana>Reichardia tingitana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Renanthera+monachica&title_tag=Renanthera+monachica>Renanthera monachica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Renealmia+pluriplicata&title_tag=Renealmia+pluriplicata>Renealmia pluriplicata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Renouxia+antillana&title_tag=Renouxia+antillana>Renouxia antillana</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reseda+alba&title_tag=Reseda+alba>Reseda alba</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reseda+lutea&title_tag=Reseda+lutea>Reseda lutea</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reseda+luteola&title_tag=Reseda+luteola>Reseda luteola</a> (40)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reseda+odorata&title_tag=Reseda+odorata>Reseda odorata</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Resnova+megaphylla&title_tag=Resnova+megaphylla>Resnova megaphylla</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Restrepia+antennifera+var.+antennifera&title_tag=Restrepia+antennifera+var.+antennifera>Restrepia antennifera var. antennifera</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Restrepia+aspasicensium&title_tag=Restrepia+aspasicensium>Restrepia aspasicensium</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Restrepia+chamaleon&title_tag=Restrepia+chamaleon>Restrepia chamaleon</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Restrepia+macolatum&title_tag=Restrepia+macolatum>Restrepia macolatum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Restrepia+sp.&title_tag=Restrepia+sp.>Restrepia sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Restrepia+sp.+(sanguina?)&title_tag=Restrepia+sp.+(sanguina?)>Restrepia sp. (sanguina?)</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Retanilla+ephedra&title_tag=Retanilla+ephedra>Retanilla ephedra</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Retrophyllum+minus&title_tag=Retrophyllum+minus>Retrophyllum minus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Retrophyllum+respigliosii&title_tag=Retrophyllum+respigliosii>Retrophyllum respigliosii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Retrophyllum+rospigliosii&title_tag=Retrophyllum+rospigliosii>Retrophyllum rospigliosii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reverchonia+arenaria&title_tag=Reverchonia+arenaria>Reverchonia arenaria</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reynoutria+japonica&title_tag=Reynoutria+japonica>Reynoutria japonica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Reynoutria+sachalinensis&title_tag=Reynoutria+sachalinensis>Reynoutria sachalinensis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhagadiolus+stellatus&title_tag=Rhagadiolus+stellatus>Rhagadiolus stellatus</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhagodia+candolleana&title_tag=Rhagodia+candolleana>Rhagodia candolleana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhagodia+sp.&title_tag=Rhagodia+sp.>Rhagodia sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhagodia+sp.+/+chenopodium&title_tag=Rhagodia+sp.+/+chenopodium>Rhagodia sp. / chenopodium</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+alaternus&title_tag=Rhamnus+alaternus>Rhamnus alaternus</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+alnifolia&title_tag=Rhamnus+alnifolia>Rhamnus alnifolia</a> (37)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+alpina&title_tag=Rhamnus+alpina>Rhamnus alpina</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+betulifolia&title_tag=Rhamnus+betulifolia>Rhamnus betulifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+california+ssp.+crassifolia&title_tag=Rhamnus+california+ssp.+crassifolia>Rhamnus california ssp. crassifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+californica&title_tag=Rhamnus+californica>Rhamnus californica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+cathartica+&title_tag=Rhamnus+cathartica+>Rhamnus cathartica </a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+catharticus&title_tag=Rhamnus+catharticus>Rhamnus catharticus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+crocea&title_tag=Rhamnus+crocea>Rhamnus crocea</a> (58)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+fallax&title_tag=Rhamnus+fallax>Rhamnus fallax</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+globosus&title_tag=Rhamnus+globosus>Rhamnus globosus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+ilicifolia&title_tag=Rhamnus+ilicifolia>Rhamnus ilicifolia</a> (108)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+insula&title_tag=Rhamnus+insula>Rhamnus insula</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+mucronata&title_tag=Rhamnus+mucronata>Rhamnus mucronata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+pilosa&title_tag=Rhamnus+pilosa>Rhamnus pilosa</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+pirifolia&title_tag=Rhamnus+pirifolia>Rhamnus pirifolia</a> (31)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+pumila&title_tag=Rhamnus+pumila>Rhamnus pumila</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+rubra&title_tag=Rhamnus+rubra>Rhamnus rubra</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+saxatilis&title_tag=Rhamnus+saxatilis>Rhamnus saxatilis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+sp.&title_tag=Rhamnus+sp.>Rhamnus sp.</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+tomentella&title_tag=Rhamnus+tomentella>Rhamnus tomentella</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+tomentella+ssp.+cuspidata&title_tag=Rhamnus+tomentella+ssp.+cuspidata>Rhamnus tomentella ssp. cuspidata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhamnus+tomentella+ssp.+tomentella&title_tag=Rhamnus+tomentella+ssp.+tomentella>Rhamnus tomentella ssp. tomentella</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhaphidophora+tetrasperma&title_tag=Rhaphidophora+tetrasperma>Rhaphidophora tetrasperma</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhaphiolepis+indica&title_tag=Rhaphiolepis+indica>Rhaphiolepis indica</a> (25)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhaphithamnus+venusta&title_tag=Rhaphithamnus+venusta>Rhaphithamnus venusta</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhapis+excelsa&title_tag=Rhapis+excelsa>Rhapis excelsa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhapis+multifida&title_tag=Rhapis+multifida>Rhapis multifida</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhaponticum+centauroides&title_tag=Rhaponticum+centauroides>Rhaponticum centauroides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhaponticum+repens&title_tag=Rhaponticum+repens>Rhaponticum repens</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rheum+australe&title_tag=Rheum+australe>Rheum australe</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rheum+rhabarbarum&title_tag=Rheum+rhabarbarum>Rheum rhabarbarum</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rheum+x-hybridum&title_tag=Rheum+x-hybridum>Rheum x-hybridum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhexia+alifanus&title_tag=Rhexia+alifanus>Rhexia alifanus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhexia+virginica&title_tag=Rhexia+virginica>Rhexia virginica</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhigozum+brevispinosum&title_tag=Rhigozum+brevispinosum>Rhigozum brevispinosum</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhigozum+obovatum&title_tag=Rhigozum+obovatum>Rhigozum obovatum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+crista-galli&title_tag=Rhinanthus+crista-galli>Rhinanthus crista-galli</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+freynii&title_tag=Rhinanthus+freynii>Rhinanthus freynii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+glacialis&title_tag=Rhinanthus+glacialis>Rhinanthus glacialis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+glacialis+ssp.+simplex&title_tag=Rhinanthus+glacialis+ssp.+simplex>Rhinanthus glacialis ssp. simplex</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+minor&title_tag=Rhinanthus+minor>Rhinanthus minor</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+minor+ssp.+groenlandicus&title_tag=Rhinanthus+minor+ssp.+groenlandicus>Rhinanthus minor ssp. groenlandicus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinanthus+minor+ssp.+minor&title_tag=Rhinanthus+minor+ssp.+minor>Rhinanthus minor ssp. minor</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinephyllum+grandiforme&title_tag=Rhinephyllum+grandiforme>Rhinephyllum grandiforme</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinephyllum+muirii&title_tag=Rhinephyllum+muirii>Rhinephyllum muirii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinotropis+californica&title_tag=Rhinotropis+californica>Rhinotropis californica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinotropis+lindheimeri+var.+lindheimeri&title_tag=Rhinotropis+lindheimeri+var.+lindheimeri>Rhinotropis lindheimeri var. lindheimeri</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinotropis+lindheimeri+var.+parvifolia&title_tag=Rhinotropis+lindheimeri+var.+parvifolia>Rhinotropis lindheimeri var. parvifolia</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhinotropsis+lindheimeri&title_tag=Rhinotropsis+lindheimeri>Rhinotropsis lindheimeri</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipidosiphon+javensis&title_tag=Rhipidosiphon+javensis>Rhipidosiphon javensis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalidopsis+sp.&title_tag=Rhipsalidopsis+sp.>Rhipsalidopsis sp.</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+aculeata&title_tag=Rhipsalis+aculeata>Rhipsalis aculeata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+baccifera&title_tag=Rhipsalis+baccifera>Rhipsalis baccifera</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+baccifera+ssp.+baccifera&title_tag=Rhipsalis+baccifera+ssp.+baccifera>Rhipsalis baccifera ssp. baccifera</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+cereuscula&title_tag=Rhipsalis+cereuscula>Rhipsalis cereuscula</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+crispata&title_tag=Rhipsalis+crispata>Rhipsalis crispata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+paradoxicus&title_tag=Rhipsalis+paradoxicus>Rhipsalis paradoxicus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+pilocarpa&title_tag=Rhipsalis+pilocarpa>Rhipsalis pilocarpa</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+salicornioides&title_tag=Rhipsalis+salicornioides>Rhipsalis salicornioides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhipsalis+sp.&title_tag=Rhipsalis+sp.>Rhipsalis sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizocarpon+geographicum&title_tag=Rhizocarpon+geographicum>Rhizocarpon geographicum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizoclonium+rhizophilum&title_tag=Rhizoclonium+rhizophilum>Rhizoclonium rhizophilum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizoclonium+robustum&title_tag=Rhizoclonium+robustum>Rhizoclonium robustum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizomnium+glabrescens&title_tag=Rhizomnium+glabrescens>Rhizomnium glabrescens</a> (1)<br>
+</td>
+<td valign=top><b>Rhizomnium - Roella</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizomnium+nudum&title_tag=Rhizomnium+nudum>Rhizomnium nudum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizomnium+pseudopunctatum&title_tag=Rhizomnium+pseudopunctatum>Rhizomnium pseudopunctatum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizophora+mangle&title_tag=Rhizophora+mangle>Rhizophora mangle</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhizophora+stylosa&title_tag=Rhizophora+stylosa>Rhizophora stylosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodanthemum+depressum&title_tag=Rhodanthemum+depressum>Rhodanthemum depressum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodanthemum+hosmariense&title_tag=Rhodanthemum+hosmariense>Rhodanthemum hosmariense</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodedendron+occidentale&title_tag=Rhodedendron+occidentale>Rhodedendron occidentale</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodendron+macrophyllum&title_tag=Rhodendron+macrophyllum>Rhodendron macrophyllum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodiola+integrifolia&title_tag=Rhodiola+integrifolia>Rhodiola integrifolia</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodiola+integrifolia+ssp.+integrifolia&title_tag=Rhodiola+integrifolia+ssp.+integrifolia>Rhodiola integrifolia ssp. integrifolia</a> (37)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodiola+pachyclados&title_tag=Rhodiola+pachyclados>Rhodiola pachyclados</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodiola+rhodantha&title_tag=Rhodiola+rhodantha>Rhodiola rhodantha</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodiola+rosea&title_tag=Rhodiola+rosea>Rhodiola rosea</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodobryum+ontariense&title_tag=Rhodobryum+ontariense>Rhodobryum ontariense</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodobryum+roseum&title_tag=Rhodobryum+roseum>Rhodobryum roseum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodochiton+atrosanguineum&title_tag=Rhodochiton+atrosanguineum>Rhodochiton atrosanguineum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodococcum+vitis-idaea&title_tag=Rhodococcum+vitis-idaea>Rhodococcum vitis-idaea</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendren+occidentale&title_tag=Rhododendren+occidentale>Rhododendren occidentale</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+adenopodum&title_tag=Rhododendron+adenopodum>Rhododendron adenopodum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+aetum+x+rhododendron+zoelleri&title_tag=Rhododendron+aetum+x+rhododendron+zoelleri>Rhododendron aetum x rhododendron zoelleri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+albiflorum&title_tag=Rhododendron+albiflorum>Rhododendron albiflorum</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+albiflorum+var.+albiflorum&title_tag=Rhododendron+albiflorum+var.+albiflorum>Rhododendron albiflorum var. albiflorum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+anagalliflorum&title_tag=Rhododendron+anagalliflorum>Rhododendron anagalliflorum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+annae&title_tag=Rhododendron+annae>Rhododendron annae</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+arborescens+&title_tag=Rhododendron+arborescens+>Rhododendron arborescens </a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+arboreum&title_tag=Rhododendron+arboreum>Rhododendron arboreum</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+arboreum+ssp.+albotomentosum&title_tag=Rhododendron+arboreum+ssp.+albotomentosum>Rhododendron arboreum ssp. albotomentosum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+arboreum+ssp.+roseum&title_tag=Rhododendron+arboreum+ssp.+roseum>Rhododendron arboreum ssp. roseum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+arboreum+ssp.+zeylanicum&title_tag=Rhododendron+arboreum+ssp.+zeylanicum>Rhododendron arboreum ssp. zeylanicum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+arboreum+var.+arboreum&title_tag=Rhododendron+arboreum+var.+arboreum>Rhododendron arboreum var. arboreum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+ariseum&title_tag=Rhododendron+ariseum>Rhododendron ariseum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+bagobonum&title_tag=Rhododendron+bagobonum>Rhododendron bagobonum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+bodenii&title_tag=Rhododendron+bodenii>Rhododendron bodenii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+brachycarpum&title_tag=Rhododendron+brachycarpum>Rhododendron brachycarpum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+brookeanum&title_tag=Rhododendron+brookeanum>Rhododendron brookeanum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+burmanicum&title_tag=Rhododendron+burmanicum>Rhododendron burmanicum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+calendulaceum&title_tag=Rhododendron+calendulaceum>Rhododendron calendulaceum</a> (31)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+campylogynum+ssp.+myrtilloides&title_tag=Rhododendron+campylogynum+ssp.+myrtilloides>Rhododendron campylogynum ssp. myrtilloides</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+camtschaticum&title_tag=Rhododendron+camtschaticum>Rhododendron camtschaticum</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+canadense&title_tag=Rhododendron+canadense>Rhododendron canadense</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+canescens&title_tag=Rhododendron+canescens>Rhododendron canescens</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+catawbiense&title_tag=Rhododendron+catawbiense>Rhododendron catawbiense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+caucasicum&title_tag=Rhododendron+caucasicum>Rhododendron caucasicum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+celebicum&title_tag=Rhododendron+celebicum>Rhododendron celebicum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+cinonuttallii&title_tag=Rhododendron+cinonuttallii>Rhododendron cinonuttallii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+coeloneuron&title_tag=Rhododendron+coeloneuron>Rhododendron coeloneuron</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+columbianum&title_tag=Rhododendron+columbianum>Rhododendron columbianum</a> (113)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+compylogynum+var.+myrtilloides&title_tag=Rhododendron+compylogynum+var.+myrtilloides>Rhododendron compylogynum var. myrtilloides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+correoides&title_tag=Rhododendron+correoides>Rhododendron correoides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+coryanum&title_tag=Rhododendron+coryanum>Rhododendron coryanum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+crassum&title_tag=Rhododendron+crassum>Rhododendron crassum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+cumberlandense+&title_tag=Rhododendron+cumberlandense+>Rhododendron cumberlandense </a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+cyrtophyllum&title_tag=Rhododendron+cyrtophyllum>Rhododendron cyrtophyllum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+daphnoides&title_tag=Rhododendron+daphnoides>Rhododendron daphnoides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+decorum&title_tag=Rhododendron+decorum>Rhododendron decorum</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+degronianum+ssp.+yakushimanum&title_tag=Rhododendron+degronianum+ssp.+yakushimanum>Rhododendron degronianum ssp. yakushimanum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+dielsianum&title_tag=Rhododendron+dielsianum>Rhododendron dielsianum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+dilatatum&title_tag=Rhododendron+dilatatum>Rhododendron dilatatum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+diversipilosum&title_tag=Rhododendron+diversipilosum>Rhododendron diversipilosum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+edgeworthii&title_tag=Rhododendron+edgeworthii>Rhododendron edgeworthii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+falconeri&title_tag=Rhododendron+falconeri>Rhododendron falconeri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+ferrugineum&title_tag=Rhododendron+ferrugineum>Rhododendron ferrugineum</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+fictolacteum&title_tag=Rhododendron+fictolacteum>Rhododendron fictolacteum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+floccigerum&title_tag=Rhododendron+floccigerum>Rhododendron floccigerum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+floribundum&title_tag=Rhododendron+floribundum>Rhododendron floribundum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+formosum&title_tag=Rhododendron+formosum>Rhododendron formosum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+fortunei&title_tag=Rhododendron+fortunei>Rhododendron fortunei</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+fragrantissimum&title_tag=Rhododendron+fragrantissimum>Rhododendron fragrantissimum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+glanduliferum&title_tag=Rhododendron+glanduliferum>Rhododendron glanduliferum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+glaucophyllum&title_tag=Rhododendron+glaucophyllum>Rhododendron glaucophyllum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+goreri&title_tag=Rhododendron+goreri>Rhododendron goreri</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+grande&title_tag=Rhododendron+grande>Rhododendron grande</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+griersonianum&title_tag=Rhododendron+griersonianum>Rhododendron griersonianum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+groenlandicum&title_tag=Rhododendron+groenlandicum>Rhododendron groenlandicum</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+hirsutum&title_tag=Rhododendron+hirsutum>Rhododendron hirsutum</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+irroratum&title_tag=Rhododendron+irroratum>Rhododendron irroratum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+irroratum+ssp.+yiliangense&title_tag=Rhododendron+irroratum+ssp.+yiliangense>Rhododendron irroratum ssp. yiliangense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+jasminiflorum&title_tag=Rhododendron+jasminiflorum>Rhododendron jasminiflorum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+johnstoneanum+x+rhododendron+moupinense&title_tag=Rhododendron+johnstoneanum+x+rhododendron+moupinense>Rhododendron johnstoneanum x rhododendron moupinense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+kanehirae&title_tag=Rhododendron+kanehirae>Rhododendron kanehirae</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+keiskei+var.+ozawae&title_tag=Rhododendron+keiskei+var.+ozawae>Rhododendron keiskei var. ozawae</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+lapponicum&title_tag=Rhododendron+lapponicum>Rhododendron lapponicum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+leucaspis&title_tag=Rhododendron+leucaspis>Rhododendron leucaspis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+leytense+var.+loheri&title_tag=Rhododendron+leytense+var.+loheri>Rhododendron leytense var. loheri</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+lochiae&title_tag=Rhododendron+lochiae>Rhododendron lochiae</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+luteum&title_tag=Rhododendron+luteum>Rhododendron luteum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+macgregoriae&title_tag=Rhododendron+macgregoriae>Rhododendron macgregoriae</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+macrophyllum&title_tag=Rhododendron+macrophyllum>Rhododendron macrophyllum</a> (121)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+maddenii+ssp.+crassum&title_tag=Rhododendron+maddenii+ssp.+crassum>Rhododendron maddenii ssp. crassum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+makinoi&title_tag=Rhododendron+makinoi>Rhododendron makinoi</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+maximum&title_tag=Rhododendron+maximum>Rhododendron maximum</a> (41)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+mjobergii&title_tag=Rhododendron+mjobergii>Rhododendron mjobergii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+molle&title_tag=Rhododendron+molle>Rhododendron molle</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+morii&title_tag=Rhododendron+morii>Rhododendron morii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+moupinense&title_tag=Rhododendron+moupinense>Rhododendron moupinense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+mucronatum&title_tag=Rhododendron+mucronatum>Rhododendron mucronatum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+neeriiflorum&title_tag=Rhododendron+neeriiflorum>Rhododendron neeriiflorum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+nubicola&title_tag=Rhododendron+nubicola>Rhododendron nubicola</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+occidentale&title_tag=Rhododendron+occidentale>Rhododendron occidentale</a> (227)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+occidentale+var.+occidentale&title_tag=Rhododendron+occidentale+var.+occidentale>Rhododendron occidentale var. occidentale</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+oldhamii&title_tag=Rhododendron+oldhamii>Rhododendron oldhamii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+orbiculare&title_tag=Rhododendron+orbiculare>Rhododendron orbiculare</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+oreodoxa+var.+fargesii&title_tag=Rhododendron+oreodoxa+var.+fargesii>Rhododendron oreodoxa var. fargesii</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+pachysanthum&title_tag=Rhododendron+pachysanthum>Rhododendron pachysanthum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+periclymenoides&title_tag=Rhododendron+periclymenoides>Rhododendron periclymenoides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+ponticum&title_tag=Rhododendron+ponticum>Rhododendron ponticum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+prinophyllum&title_tag=Rhododendron+prinophyllum>Rhododendron prinophyllum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+protistum&title_tag=Rhododendron+protistum>Rhododendron protistum</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+protistum+x+Rhododendron+grande&title_tag=Rhododendron+protistum+x+Rhododendron+grande>Rhododendron protistum x Rhododendron grande</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+pseudochrysanthum&title_tag=Rhododendron+pseudochrysanthum>Rhododendron pseudochrysanthum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+racemosum&title_tag=Rhododendron+racemosum>Rhododendron racemosum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+rigidum&title_tag=Rhododendron+rigidum>Rhododendron rigidum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+rugosum+var.+kinabaluense&title_tag=Rhododendron+rugosum+var.+kinabaluense>Rhododendron rugosum var. kinabaluense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+scabrifolium+var.+spiciferum&title_tag=Rhododendron+scabrifolium+var.+spiciferum>Rhododendron scabrifolium var. spiciferum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+schlippenbachii&title_tag=Rhododendron+schlippenbachii>Rhododendron schlippenbachii</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+searsiae&title_tag=Rhododendron+searsiae>Rhododendron searsiae</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+seta&title_tag=Rhododendron+seta>Rhododendron seta</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+setosum+var.+macranthum&title_tag=Rhododendron+setosum+var.+macranthum>Rhododendron setosum var. macranthum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+siderophyllum&title_tag=Rhododendron+siderophyllum>Rhododendron siderophyllum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+sinogrande&title_tag=Rhododendron+sinogrande>Rhododendron sinogrande</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+sp.&title_tag=Rhododendron+sp.>Rhododendron sp.</a> (115)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+spiciferum&title_tag=Rhododendron+spiciferum>Rhododendron spiciferum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+spinuliferum&title_tag=Rhododendron+spinuliferum>Rhododendron spinuliferum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+tashiroi&title_tag=Rhododendron+tashiroi>Rhododendron tashiroi</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+ungerni&title_tag=Rhododendron+ungerni>Rhododendron ungerni</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+vaseyi&title_tag=Rhododendron+vaseyi>Rhododendron vaseyi</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+veitchianum&title_tag=Rhododendron+veitchianum>Rhododendron veitchianum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+vireya&title_tag=Rhododendron+vireya>Rhododendron vireya</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+viscosum&title_tag=Rhododendron+viscosum>Rhododendron viscosum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+weyrichii&title_tag=Rhododendron+weyrichii>Rhododendron weyrichii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+williamsianum&title_tag=Rhododendron+williamsianum>Rhododendron williamsianum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+wiltonii&title_tag=Rhododendron+wiltonii>Rhododendron wiltonii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+xanthostephanum&title_tag=Rhododendron+xanthostephanum>Rhododendron xanthostephanum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+yakushimanum&title_tag=Rhododendron+yakushimanum>Rhododendron yakushimanum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+yakushimanum+x+rhododendron+smirnovii&title_tag=Rhododendron+yakushimanum+x+rhododendron+smirnovii>Rhododendron yakushimanum x rhododendron smirnovii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+yedoense+var.+poukhanense&title_tag=Rhododendron+yedoense+var.+poukhanense>Rhododendron yedoense var. poukhanense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+yiliangense&title_tag=Rhododendron+yiliangense>Rhododendron yiliangense</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhododendron+yungningense&title_tag=Rhododendron+yungningense>Rhododendron yungningense</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodohypoxis+baurii&title_tag=Rhodohypoxis+baurii>Rhodohypoxis baurii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodophiala+advena&title_tag=Rhodophiala+advena>Rhodophiala advena</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodophiala+araucana&title_tag=Rhodophiala+araucana>Rhodophiala araucana</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodosphaera+rhodanthema&title_tag=Rhodosphaera+rhodanthema>Rhodosphaera rhodanthema</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodothamnus+chamaecistus&title_tag=Rhodothamnus+chamaecistus>Rhodothamnus chamaecistus</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodotypos+scandens&title_tag=Rhodotypos+scandens>Rhodotypos scandens</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhodymenia&title_tag=Rhodymenia>Rhodymenia</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhoicissus+capensis&title_tag=Rhoicissus+capensis>Rhoicissus capensis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhopalostylis+baueri&title_tag=Rhopalostylis+baueri>Rhopalostylis baueri</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhopalostylis+sapida&title_tag=Rhopalostylis+sapida>Rhopalostylis sapida</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+aromatica&title_tag=Rhus+aromatica>Rhus aromatica</a> (122)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+aromatica+var.+anisophylla&title_tag=Rhus+aromatica+var.+anisophylla>Rhus aromatica var. anisophylla</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+aromatica+var.+aromatica&title_tag=Rhus+aromatica+var.+aromatica>Rhus aromatica var. aromatica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+aromatica+var.+pilosissima&title_tag=Rhus+aromatica+var.+pilosissima>Rhus aromatica var. pilosissima</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+aromatica+var.+simplicifolia&title_tag=Rhus+aromatica+var.+simplicifolia>Rhus aromatica var. simplicifolia</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+aromatica+var.+trilobata&title_tag=Rhus+aromatica+var.+trilobata>Rhus aromatica var. trilobata</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+choriophylla&title_tag=Rhus+choriophylla>Rhus choriophylla</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+cismontana&title_tag=Rhus+cismontana>Rhus cismontana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+copallina&title_tag=Rhus+copallina>Rhus copallina</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+copallinum&title_tag=Rhus+copallinum>Rhus copallinum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+copallinum+var.+latifolia&title_tag=Rhus+copallinum+var.+latifolia>Rhus copallinum var. latifolia</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+glabra&title_tag=Rhus+glabra>Rhus glabra</a> (42)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+hirta&title_tag=Rhus+hirta>Rhus hirta</a> (36)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+integrifolia&title_tag=Rhus+integrifolia>Rhus integrifolia</a> (92)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+lancea&title_tag=Rhus+lancea>Rhus lancea</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+lanceolata&title_tag=Rhus+lanceolata>Rhus lanceolata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+lentii&title_tag=Rhus+lentii>Rhus lentii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+microphylla&title_tag=Rhus+microphylla>Rhus microphylla</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+muelleri&title_tag=Rhus+muelleri>Rhus muelleri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+ovata&title_tag=Rhus+ovata>Rhus ovata</a> (97)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+pachyrrhachis&title_tag=Rhus+pachyrrhachis>Rhus pachyrrhachis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+pendulina&title_tag=Rhus+pendulina>Rhus pendulina</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+radicans&title_tag=Rhus+radicans>Rhus radicans</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+sandwicensis&title_tag=Rhus+sandwicensis>Rhus sandwicensis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+schmidelioides&title_tag=Rhus+schmidelioides>Rhus schmidelioides</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+semialata&title_tag=Rhus+semialata>Rhus semialata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+taitensis&title_tag=Rhus+taitensis>Rhus taitensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+tepetate&title_tag=Rhus+tepetate>Rhus tepetate</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+tetepate&title_tag=Rhus+tetepate>Rhus tetepate</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+trichocarpa&title_tag=Rhus+trichocarpa>Rhus trichocarpa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+trilobata&title_tag=Rhus+trilobata>Rhus trilobata</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+trilobata+var.+trilobata&title_tag=Rhus+trilobata+var.+trilobata>Rhus trilobata var. trilobata</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+tumulicola&title_tag=Rhus+tumulicola>Rhus tumulicola</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+typhina&title_tag=Rhus+typhina>Rhus typhina</a> (22)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+virens&title_tag=Rhus+virens>Rhus virens</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+virens+var.+virens&title_tag=Rhus+virens+var.+virens>Rhus virens var. virens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhus+X+pulvinata+&title_tag=Rhus+X+pulvinata+>Rhus X pulvinata </a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhyncholaelia+digbyana&title_tag=Rhyncholaelia+digbyana>Rhyncholaelia digbyana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhyncholaelia+glauca&title_tag=Rhyncholaelia+glauca>Rhyncholaelia glauca</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchosia+discolor&title_tag=Rhynchosia+discolor>Rhynchosia discolor</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchosia+minima&title_tag=Rhynchosia+minima>Rhynchosia minima</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchosia+senna+var.+texana&title_tag=Rhynchosia+senna+var.+texana>Rhynchosia senna var. texana</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchosida+physocalyx&title_tag=Rhynchosida+physocalyx>Rhynchosida physocalyx</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+alba&title_tag=Rhynchospora+alba>Rhynchospora alba</a> (36)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+californica&title_tag=Rhynchospora+californica>Rhynchospora californica</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+capitellata&title_tag=Rhynchospora+capitellata>Rhynchospora capitellata</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+colorata&title_tag=Rhynchospora+colorata>Rhynchospora colorata</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+floridensis&title_tag=Rhynchospora+floridensis>Rhynchospora floridensis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+fusca&title_tag=Rhynchospora+fusca>Rhynchospora fusca</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+globularis&title_tag=Rhynchospora+globularis>Rhynchospora globularis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+latifolia&title_tag=Rhynchospora+latifolia>Rhynchospora latifolia</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchospora+nervosa&title_tag=Rhynchospora+nervosa>Rhynchospora nervosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhynchostylis+gigantea&title_tag=Rhynchostylis+gigantea>Rhynchostylis gigantea</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhytidiadelphus+loreus&title_tag=Rhytidiadelphus+loreus>Rhytidiadelphus loreus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rhytidiadelphus+subpinnatus&title_tag=Rhytidiadelphus+subpinnatus>Rhytidiadelphus subpinnatus</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+alpinum&title_tag=Ribes+alpinum>Ribes alpinum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+amarum&title_tag=Ribes+amarum>Ribes amarum</a> (70)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+americanum&title_tag=Ribes+americanum>Ribes americanum</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+aureum&title_tag=Ribes+aureum>Ribes aureum</a> (58)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+aureum+var.+aureum&title_tag=Ribes+aureum+var.+aureum>Ribes aureum var. aureum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+aureum+var.+gracillimum&title_tag=Ribes+aureum+var.+gracillimum>Ribes aureum var. gracillimum</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+aureum+var.+villosum&title_tag=Ribes+aureum+var.+villosum>Ribes aureum var. villosum</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+binominatum&title_tag=Ribes+binominatum>Ribes binominatum</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+bracteosum&title_tag=Ribes+bracteosum>Ribes bracteosum</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+californicum&title_tag=Ribes+californicum>Ribes californicum</a> (36)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+californicum+var.+californicum&title_tag=Ribes+californicum+var.+californicum>Ribes californicum var. californicum</a> (51)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+californicum+var.+californicum;&title_tag=Ribes+californicum+var.+californicum;>Ribes californicum var. californicum;</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+californicum+var.+hesperium&title_tag=Ribes+californicum+var.+hesperium>Ribes californicum var. hesperium</a> (44)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+canthariforme&title_tag=Ribes+canthariforme>Ribes canthariforme</a> (61)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+cereum&title_tag=Ribes+cereum>Ribes cereum</a> (109)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+cereum+var.+cereum&title_tag=Ribes+cereum+var.+cereum>Ribes cereum var. cereum</a> (63)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+cereum+var.+inebrians&title_tag=Ribes+cereum+var.+inebrians>Ribes cereum var. inebrians</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+ceriferum&title_tag=Ribes+ceriferum>Ribes ceriferum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+ceriforum&title_tag=Ribes+ceriforum>Ribes ceriforum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+cynosbati&title_tag=Ribes+cynosbati>Ribes cynosbati</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+divaricatum&title_tag=Ribes+divaricatum>Ribes divaricatum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+divaricatum+ssp.+divaricatum&title_tag=Ribes+divaricatum+ssp.+divaricatum>Ribes divaricatum ssp. divaricatum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+divaricatum+var.+pubiferum&title_tag=Ribes+divaricatum+var.+pubiferum>Ribes divaricatum var. pubiferum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+divaricatum+var.+pubiflorum&title_tag=Ribes+divaricatum+var.+pubiflorum>Ribes divaricatum var. pubiflorum</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+erythrocarpum&title_tag=Ribes+erythrocarpum>Ribes erythrocarpum</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+glandulosum&title_tag=Ribes+glandulosum>Ribes glandulosum</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+hirtellum+&title_tag=Ribes+hirtellum+>Ribes hirtellum </a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+howellii&title_tag=Ribes+howellii>Ribes howellii</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+hudsonianum&title_tag=Ribes+hudsonianum>Ribes hudsonianum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+indecorum&title_tag=Ribes+indecorum>Ribes indecorum</a> (43)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+inerme&title_tag=Ribes+inerme>Ribes inerme</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+inerme+var.+inerme&title_tag=Ribes+inerme+var.+inerme>Ribes inerme var. inerme</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+lacustre&title_tag=Ribes+lacustre>Ribes lacustre</a> (29)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+lasianthum&title_tag=Ribes+lasianthum>Ribes lasianthum</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+laxiflorum&title_tag=Ribes+laxiflorum>Ribes laxiflorum</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+leptanthus&title_tag=Ribes+leptanthus>Ribes leptanthus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+lobbii&title_tag=Ribes+lobbii>Ribes lobbii</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+magellanicum&title_tag=Ribes+magellanicum>Ribes magellanicum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+malvaceum&title_tag=Ribes+malvaceum>Ribes malvaceum</a> (95)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+malvaceum+var.+malvaceum&title_tag=Ribes+malvaceum+var.+malvaceum>Ribes malvaceum var. malvaceum</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+malvaceum+var.+viridifolium&title_tag=Ribes+malvaceum+var.+viridifolium>Ribes malvaceum var. viridifolium</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+marshallii&title_tag=Ribes+marshallii>Ribes marshallii</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+menziesii&title_tag=Ribes+menziesii>Ribes menziesii</a> (34)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+menziesii+var.+ixoderme&title_tag=Ribes+menziesii+var.+ixoderme>Ribes menziesii var. ixoderme</a> (36)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+menziesii+var.+menziesii&title_tag=Ribes+menziesii+var.+menziesii>Ribes menziesii var. menziesii</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+missouriense&title_tag=Ribes+missouriense>Ribes missouriense</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+montigenum&title_tag=Ribes+montigenum>Ribes montigenum</a> (86)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+nevadense&title_tag=Ribes+nevadense>Ribes nevadense</a> (82)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+nigrum&title_tag=Ribes+nigrum>Ribes nigrum</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+niveum&title_tag=Ribes+niveum>Ribes niveum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+oxyacanthoides&title_tag=Ribes+oxyacanthoides>Ribes oxyacanthoides</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+pinetorum&title_tag=Ribes+pinetorum>Ribes pinetorum</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+quercetorum&title_tag=Ribes+quercetorum>Ribes quercetorum</a> (64)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+roezlii&title_tag=Ribes+roezlii>Ribes roezlii</a> (67)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+roezlii+var.+amictum&title_tag=Ribes+roezlii+var.+amictum>Ribes roezlii var. amictum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+roezlii+var.+cruentum&title_tag=Ribes+roezlii+var.+cruentum>Ribes roezlii var. cruentum</a> (28)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+roezlii+var.+roezlii&title_tag=Ribes+roezlii+var.+roezlii>Ribes roezlii var. roezlii</a> (103)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+rubrum&title_tag=Ribes+rubrum>Ribes rubrum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sanguieneum&title_tag=Ribes+sanguieneum>Ribes sanguieneum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sanguineum&title_tag=Ribes+sanguineum>Ribes sanguineum</a> (60)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sanguineum+var.+glutinosum&title_tag=Ribes+sanguineum+var.+glutinosum>Ribes sanguineum var. glutinosum</a> (89)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sanguineum+var.+sanguineum&title_tag=Ribes+sanguineum+var.+sanguineum>Ribes sanguineum var. sanguineum</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sativum&title_tag=Ribes+sativum>Ribes sativum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sericeum&title_tag=Ribes+sericeum>Ribes sericeum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+sp.&title_tag=Ribes+sp.>Ribes sp.</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+speciosum&title_tag=Ribes+speciosum>Ribes speciosum</a> (107)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+thacherianum&title_tag=Ribes+thacherianum>Ribes thacherianum</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+tortuosum&title_tag=Ribes+tortuosum>Ribes tortuosum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+triste&title_tag=Ribes+triste>Ribes triste</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+tularense&title_tag=Ribes+tularense>Ribes tularense</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+uva-crispa+var.+sativum&title_tag=Ribes+uva-crispa+var.+sativum>Ribes uva-crispa var. sativum</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+velutinum&title_tag=Ribes+velutinum>Ribes velutinum</a> (58)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+viburnifolium&title_tag=Ribes+viburnifolium>Ribes viburnifolium</a> (69)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+victoris&title_tag=Ribes+victoris>Ribes victoris</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+viscosissimum&title_tag=Ribes+viscosissimum>Ribes viscosissimum</a> (69)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ribes+viscosissmum&title_tag=Ribes+viscosissmum>Ribes viscosissmum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Riccardia+latifrons&title_tag=Riccardia+latifrons>Riccardia latifrons</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Riccardia+multifida&title_tag=Riccardia+multifida>Riccardia multifida</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Riccia+beyrichiana&title_tag=Riccia+beyrichiana>Riccia beyrichiana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Riccia+californica&title_tag=Riccia+californica>Riccia californica</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Riccia+nigrella&title_tag=Riccia+nigrella>Riccia nigrella</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Richardia+grandiflora&title_tag=Richardia+grandiflora>Richardia grandiflora</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Richardia+triococca+ssp.+tetracocca&title_tag=Richardia+triococca+ssp.+tetracocca>Richardia triococca ssp. tetracocca</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Richea+pandanifolia&title_tag=Richea+pandanifolia>Richea pandanifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Richeria+grandis&title_tag=Richeria+grandis>Richeria grandis</a> (25)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ricinocarpos+pinifolius&title_tag=Ricinocarpos+pinifolius>Ricinocarpos pinifolius</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ricinus+communis&title_tag=Ricinus+communis>Ricinus communis</a> (96)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rigeron+compositus&title_tag=Rigeron+compositus>Rigeron compositus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rigiopappus+leptocladus&title_tag=Rigiopappus+leptocladus>Rigiopappus leptocladus</a> (72)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ris+douglasiana&title_tag=Ris+douglasiana>Ris douglasiana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ris+missouriensis&title_tag=Ris+missouriensis>Ris missouriensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Riubus+parviflorus&title_tag=Riubus+parviflorus>Riubus parviflorus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rivina+humilis&title_tag=Rivina+humilis>Rivina humilis</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rivulariella+gemmipara&title_tag=Rivulariella+gemmipara>Rivulariella gemmipara</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Robinia+hispida&title_tag=Robinia+hispida>Robinia hispida</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Robinia+neomexicana&title_tag=Robinia+neomexicana>Robinia neomexicana</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Robinia+neomexicana+var.+rusbyi&title_tag=Robinia+neomexicana+var.+rusbyi>Robinia neomexicana var. rusbyi</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Robinia+pseudoacacia&title_tag=Robinia+pseudoacacia>Robinia pseudoacacia</a> (96)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Robinia+x+ambigua&title_tag=Robinia+x+ambigua>Robinia x ambigua</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rodgersia+pinnata&title_tag=Rodgersia+pinnata>Rodgersia pinnata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rodophiala+mendocina&title_tag=Rodophiala+mendocina>Rodophiala mendocina</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rodriguezia+bahiensis&title_tag=Rodriguezia+bahiensis>Rodriguezia bahiensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roella+ciliata&title_tag=Roella+ciliata>Roella ciliata</a> (4)<br>
+</td>
+<td valign=top><b>Roellia - Rytidostylis</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roellia+roellii&title_tag=Roellia+roellii>Roellia roellii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roepera+cordifolia&title_tag=Roepera+cordifolia>Roepera cordifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rogiera+strigosa&title_tag=Rogiera+strigosa>Rogiera strigosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rojasianthe+superba&title_tag=Rojasianthe+superba>Rojasianthe superba</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+aschenborniana&title_tag=Roldana+aschenborniana>Roldana aschenborniana</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+barba-johannis&title_tag=Roldana+barba-johannis>Roldana barba-johannis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+gilgii&title_tag=Roldana+gilgii>Roldana gilgii</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+hartwegii&title_tag=Roldana+hartwegii>Roldana hartwegii</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+heterogama&title_tag=Roldana+heterogama>Roldana heterogama</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+hirsuticaulis&title_tag=Roldana+hirsuticaulis>Roldana hirsuticaulis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+lobata&title_tag=Roldana+lobata>Roldana lobata</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roldana+petasitis&title_tag=Roldana+petasitis>Roldana petasitis</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rolfeara&title_tag=Rolfeara>Rolfeara</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romanzoffia+californica&title_tag=Romanzoffia+californica>Romanzoffia californica</a> (59)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romanzoffia+sitchensis&title_tag=Romanzoffia+sitchensis>Romanzoffia sitchensis</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romanzoffia+thompsonii&title_tag=Romanzoffia+thompsonii>Romanzoffia thompsonii</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romanzoffia+tracyi&title_tag=Romanzoffia+tracyi>Romanzoffia tracyi</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romneya+coulteri&title_tag=Romneya+coulteri>Romneya coulteri</a> (88)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romneya+sp.&title_tag=Romneya+sp.>Romneya sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romneya+trichocalyx&title_tag=Romneya+trichocalyx>Romneya trichocalyx</a> (51)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+bulbocodium&title_tag=Romulea+bulbocodium>Romulea bulbocodium</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+columnae&title_tag=Romulea+columnae>Romulea columnae</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+eximia&title_tag=Romulea+eximia>Romulea eximia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+macowanii&title_tag=Romulea+macowanii>Romulea macowanii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+requienii&title_tag=Romulea+requienii>Romulea requienii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+rosea&title_tag=Romulea+rosea>Romulea rosea</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+rosea+var.+australis&title_tag=Romulea+rosea+var.+australis>Romulea rosea var. australis</a> (43)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+subfistulosa&title_tag=Romulea+subfistulosa>Romulea subfistulosa</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+tortuosa+var.+tortuosa&title_tag=Romulea+tortuosa+var.+tortuosa>Romulea tortuosa var. tortuosa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Romulea+zahnii&title_tag=Romulea+zahnii>Romulea zahnii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roridula+dentata&title_tag=Roridula+dentata>Roridula dentata</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roridula+gorgonias&title_tag=Roridula+gorgonias>Roridula gorgonias</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+alpina&title_tag=Rorippa+alpina>Rorippa alpina</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+austriaca&title_tag=Rorippa+austriaca>Rorippa austriaca</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+columbiae&title_tag=Rorippa+columbiae>Rorippa columbiae</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+curvipes&title_tag=Rorippa+curvipes>Rorippa curvipes</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+curvisiliqua&title_tag=Rorippa+curvisiliqua>Rorippa curvisiliqua</a> (72)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+gambelii&title_tag=Rorippa+gambelii>Rorippa gambelii</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+nasturtium-aquaticum&title_tag=Rorippa+nasturtium-aquaticum>Rorippa nasturtium-aquaticum</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+nasturtium-aquaticum+agg.&title_tag=Rorippa+nasturtium-aquaticum+agg.>Rorippa nasturtium-aquaticum agg.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+palustris&title_tag=Rorippa+palustris>Rorippa palustris</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+palustris+ssp.+fernaldiana&title_tag=Rorippa+palustris+ssp.+fernaldiana>Rorippa palustris ssp. fernaldiana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+palustris+ssp.+palustris&title_tag=Rorippa+palustris+ssp.+palustris>Rorippa palustris ssp. palustris</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+palustris+var.+occidentalis&title_tag=Rorippa+palustris+var.+occidentalis>Rorippa palustris var. occidentalis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+sarmentosa&title_tag=Rorippa+sarmentosa>Rorippa sarmentosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+sinuata&title_tag=Rorippa+sinuata>Rorippa sinuata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+sp.&title_tag=Rorippa+sp.>Rorippa sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+sphaerocarpa&title_tag=Rorippa+sphaerocarpa>Rorippa sphaerocarpa</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rorippa+subumbellata&title_tag=Rorippa+subumbellata>Rorippa subumbellata</a> (38)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa&title_tag=Rosa>Rosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+acicularis&title_tag=Rosa+acicularis>Rosa acicularis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+acicularis+ssp.+sayi+&title_tag=Rosa+acicularis+ssp.+sayi+>Rosa acicularis ssp. sayi </a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+agrestis&title_tag=Rosa+agrestis>Rosa agrestis</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+arkansana&title_tag=Rosa+arkansana>Rosa arkansana</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+arvensis&title_tag=Rosa+arvensis>Rosa arvensis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+banksiae&title_tag=Rosa+banksiae>Rosa banksiae</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+blanda&title_tag=Rosa+blanda>Rosa blanda</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+bridgesii&title_tag=Rosa+bridgesii>Rosa bridgesii</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+californica&title_tag=Rosa+californica>Rosa californica</a> (155)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+canina&title_tag=Rosa+canina>Rosa canina</a> (37)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+chinensis&title_tag=Rosa+chinensis>Rosa chinensis</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+chinensis+var.+spontanea&title_tag=Rosa+chinensis+var.+spontanea>Rosa chinensis var. spontanea</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+davurica&title_tag=Rosa+davurica>Rosa davurica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+fortuniana&title_tag=Rosa+fortuniana>Rosa fortuniana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+gallica&title_tag=Rosa+gallica>Rosa gallica</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+glauca&title_tag=Rosa+glauca>Rosa glauca</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+gymnocarpa&title_tag=Rosa+gymnocarpa>Rosa gymnocarpa</a> (99)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+gymnocarpa+var.+gymnocarpa&title_tag=Rosa+gymnocarpa+var.+gymnocarpa>Rosa gymnocarpa var. gymnocarpa</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+gymnocarpa+var.+serpentina&title_tag=Rosa+gymnocarpa+var.+serpentina>Rosa gymnocarpa var. serpentina</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+hybrid&title_tag=Rosa+hybrid>Rosa hybrid</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+maximowicziana&title_tag=Rosa+maximowicziana>Rosa maximowicziana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+minutifolia&title_tag=Rosa+minutifolia>Rosa minutifolia</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+moyesii&title_tag=Rosa+moyesii>Rosa moyesii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+multiflora&title_tag=Rosa+multiflora>Rosa multiflora</a> (33)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+nutkana&title_tag=Rosa+nutkana>Rosa nutkana</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+nutkana+ssp.+macdougalii&title_tag=Rosa+nutkana+ssp.+macdougalii>Rosa nutkana ssp. macdougalii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+nutkana+ssp.+macdougallii&title_tag=Rosa+nutkana+ssp.+macdougallii>Rosa nutkana ssp. macdougallii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+nutkana+ssp.+nutkana&title_tag=Rosa+nutkana+ssp.+nutkana>Rosa nutkana ssp. nutkana</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+nutkana+vssp.+nutkana&title_tag=Rosa+nutkana+vssp.+nutkana>Rosa nutkana vssp. nutkana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+obtusifolia&title_tag=Rosa+obtusifolia>Rosa obtusifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+odorata&title_tag=Rosa+odorata>Rosa odorata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+odorata+var.+gigantea&title_tag=Rosa+odorata+var.+gigantea>Rosa odorata var. gigantea</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+palustris&title_tag=Rosa+palustris>Rosa palustris</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+pendulina&title_tag=Rosa+pendulina>Rosa pendulina</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+pimpinellifolia&title_tag=Rosa+pimpinellifolia>Rosa pimpinellifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+pinetorum&title_tag=Rosa+pinetorum>Rosa pinetorum</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+pisocarpa&title_tag=Rosa+pisocarpa>Rosa pisocarpa</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+pisocarpa+ssp.+ahartii&title_tag=Rosa+pisocarpa+ssp.+ahartii>Rosa pisocarpa ssp. ahartii</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+pisocarpa+ssp.+pisocarpa&title_tag=Rosa+pisocarpa+ssp.+pisocarpa>Rosa pisocarpa ssp. pisocarpa</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+roxburghii&title_tag=Rosa+roxburghii>Rosa roxburghii</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+rubiginosa&title_tag=Rosa+rubiginosa>Rosa rubiginosa</a> (41)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+rugosa&title_tag=Rosa+rugosa>Rosa rugosa</a> (63)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+sempervirens&title_tag=Rosa+sempervirens>Rosa sempervirens</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+sericea&title_tag=Rosa+sericea>Rosa sericea</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+setigera&title_tag=Rosa+setigera>Rosa setigera</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+sp.&title_tag=Rosa+sp.>Rosa sp.</a> (347)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+spinosissima&title_tag=Rosa+spinosissima>Rosa spinosissima</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+spithamea&title_tag=Rosa+spithamea>Rosa spithamea</a> (30)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+stellata&title_tag=Rosa+stellata>Rosa stellata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+stellata+var.+mirifica&title_tag=Rosa+stellata+var.+mirifica>Rosa stellata var. mirifica</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+villosa&title_tag=Rosa+villosa>Rosa villosa</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+virginiana&title_tag=Rosa+virginiana>Rosa virginiana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+wichuriana+var.+poterifolia&title_tag=Rosa+wichuriana+var.+poterifolia>Rosa wichuriana var. poterifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+woodsii&title_tag=Rosa+woodsii>Rosa woodsii</a> (37)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+woodsii+ssp.+gratissima&title_tag=Rosa+woodsii+ssp.+gratissima>Rosa woodsii ssp. gratissima</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+woodsii+ssp.+ultramontana&title_tag=Rosa+woodsii+ssp.+ultramontana>Rosa woodsii ssp. ultramontana</a> (67)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+woodsii+ssp.+Woodsii&title_tag=Rosa+woodsii+ssp.+Woodsii>Rosa woodsii ssp. Woodsii</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+woodsii+var.+ultramontana&title_tag=Rosa+woodsii+var.+ultramontana>Rosa woodsii var. ultramontana</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosa+X+damascena&title_tag=Rosa+X+damascena>Rosa X damascena</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roscoea+humeana&title_tag=Roscoea+humeana>Roscoea humeana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roscoea+humeana+ssp.+alba&title_tag=Roscoea+humeana+ssp.+alba>Roscoea humeana ssp. alba</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosenvingea+intricata&title_tag=Rosenvingea+intricata>Rosenvingea intricata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosenvingea+intricata+cf&title_tag=Rosenvingea+intricata+cf>Rosenvingea intricata cf</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosmarinus+officinalis&title_tag=Rosmarinus+officinalis>Rosmarinus officinalis</a> (30)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rossioglossum+williamsianum&title_tag=Rossioglossum+williamsianum>Rossioglossum williamsianum</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rostraria+cristata&title_tag=Rostraria+cristata>Rostraria cristata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosulabryum+capillare&title_tag=Rosulabryum+capillare>Rosulabryum capillare</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rosularia+sedoides&title_tag=Rosularia+sedoides>Rosularia sedoides</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rotala+ramosior&title_tag=Rotala+ramosior>Rotala ramosior</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rotala+rotundifolia&title_tag=Rotala+rotundifolia>Rotala rotundifolia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rotheca+myricoides&title_tag=Rotheca+myricoides>Rotheca myricoides</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rothmania+capensis&title_tag=Rothmania+capensis>Rothmania capensis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rothmania+fischeri&title_tag=Rothmania+fischeri>Rothmania fischeri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rotkmania+capensis&title_tag=Rotkmania+capensis>Rotkmania capensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roupala+montana&title_tag=Roupala+montana>Roupala montana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roveanthus+strigosus&title_tag=Roveanthus+strigosus>Roveanthus strigosus</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Royena+guerkii&title_tag=Royena+guerkii>Royena guerkii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roystonea+elata&title_tag=Roystonea+elata>Roystonea elata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Roystonea+regia&title_tag=Roystonea+regia>Roystonea regia</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubia+peregrina&title_tag=Rubia+peregrina>Rubia peregrina</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubia+tinctoria&title_tag=Rubia+tinctoria>Rubia tinctoria</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+acaulis&title_tag=Rubus+acaulis>Rubus acaulis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+adscitus&title_tag=Rubus+adscitus>Rubus adscitus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+allegheniensis&title_tag=Rubus+allegheniensis>Rubus allegheniensis</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+arcticus&title_tag=Rubus+arcticus>Rubus arcticus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+armeniacus&title_tag=Rubus+armeniacus>Rubus armeniacus</a> (94)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+caesius&title_tag=Rubus+caesius>Rubus caesius</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+calycinoides&title_tag=Rubus+calycinoides>Rubus calycinoides</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+chamaemorus&title_tag=Rubus+chamaemorus>Rubus chamaemorus</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+cockburnianus&title_tag=Rubus+cockburnianus>Rubus cockburnianus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+constrictus&title_tag=Rubus+constrictus>Rubus constrictus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+cuneifolius&title_tag=Rubus+cuneifolius>Rubus cuneifolius</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+deliciosus&title_tag=Rubus+deliciosus>Rubus deliciosus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+discolor&title_tag=Rubus+discolor>Rubus discolor</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+fruticosus&title_tag=Rubus+fruticosus>Rubus fruticosus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+fruticosus-agg&title_tag=Rubus+fruticosus-agg>Rubus fruticosus-agg</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+geoides&title_tag=Rubus+geoides>Rubus geoides</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+glaucifolius&title_tag=Rubus+glaucifolius>Rubus glaucifolius</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+hastiformis&title_tag=Rubus+hastiformis>Rubus hastiformis</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+hawaiensis&title_tag=Rubus+hawaiensis>Rubus hawaiensis</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+idaeus&title_tag=Rubus+idaeus>Rubus idaeus</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+idaeus+ssp.+strigosus&title_tag=Rubus+idaeus+ssp.+strigosus>Rubus idaeus ssp. strigosus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+irenaeus&title_tag=Rubus+irenaeus>Rubus irenaeus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+laciniatus&title_tag=Rubus+laciniatus>Rubus laciniatus</a> (52)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+lasiococcus&title_tag=Rubus+lasiococcus>Rubus lasiococcus</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+leucodermis&title_tag=Rubus+leucodermis>Rubus leucodermis</a> (53)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+macropetalus&title_tag=Rubus+macropetalus>Rubus macropetalus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+neomexicanus&title_tag=Rubus+neomexicanus>Rubus neomexicanus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+nivalis&title_tag=Rubus+nivalis>Rubus nivalis</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+niveus&title_tag=Rubus+niveus>Rubus niveus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+occidentalis+&title_tag=Rubus+occidentalis+>Rubus occidentalis </a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+odoratus&title_tag=Rubus+odoratus>Rubus odoratus</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+palmeri&title_tag=Rubus+palmeri>Rubus palmeri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+parviflorus&title_tag=Rubus+parviflorus>Rubus parviflorus</a> (157)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+parvifolius&title_tag=Rubus+parvifolius>Rubus parvifolius</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+pedatus&title_tag=Rubus+pedatus>Rubus pedatus</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+pensilvanicus&title_tag=Rubus+pensilvanicus>Rubus pensilvanicus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+pentalobus&title_tag=Rubus+pentalobus>Rubus pentalobus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+phoenicolasius&title_tag=Rubus+phoenicolasius>Rubus phoenicolasius</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+pubescens&title_tag=Rubus+pubescens>Rubus pubescens</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+rilstonei&title_tag=Rubus+rilstonei>Rubus rilstonei</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+rosifolius&title_tag=Rubus+rosifolius>Rubus rosifolius</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+rosifolius+var.+coronarius&title_tag=Rubus+rosifolius+var.+coronarius>Rubus rosifolius var. coronarius</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+rubritinctus&title_tag=Rubus+rubritinctus>Rubus rubritinctus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+saxatilis&title_tag=Rubus+saxatilis>Rubus saxatilis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+sp.&title_tag=Rubus+sp.>Rubus sp.</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+spectabilis&title_tag=Rubus+spectabilis>Rubus spectabilis</a> (126)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+spectatus&title_tag=Rubus+spectatus>Rubus spectatus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+tricolor&title_tag=Rubus+tricolor>Rubus tricolor</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+trilobus&title_tag=Rubus+trilobus>Rubus trilobus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+trivialis&title_tag=Rubus+trivialis>Rubus trivialis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+ulmifolius&title_tag=Rubus+ulmifolius>Rubus ulmifolius</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+ulmifolius+var.+anoplothyrsus&title_tag=Rubus+ulmifolius+var.+anoplothyrsus>Rubus ulmifolius var. anoplothyrsus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+ursinus&title_tag=Rubus+ursinus>Rubus ursinus</a> (145)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+vermontanus&title_tag=Rubus+vermontanus>Rubus vermontanus</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rubus+vestitus&title_tag=Rubus+vestitus>Rubus vestitus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+amplexicaulis&title_tag=Rudbeckia+amplexicaulis>Rudbeckia amplexicaulis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+bicolor&title_tag=Rudbeckia+bicolor>Rudbeckia bicolor</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+californica&title_tag=Rudbeckia+californica>Rudbeckia californica</a> (67)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+fulgida&title_tag=Rudbeckia+fulgida>Rudbeckia fulgida</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+fulgida+var.+fulgida&title_tag=Rudbeckia+fulgida+var.+fulgida>Rudbeckia fulgida var. fulgida</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+fulgida+var.+speciosa&title_tag=Rudbeckia+fulgida+var.+speciosa>Rudbeckia fulgida var. speciosa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+fulgida+var.+sullivantii&title_tag=Rudbeckia+fulgida+var.+sullivantii>Rudbeckia fulgida var. sullivantii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+glaucescens&title_tag=Rudbeckia+glaucescens>Rudbeckia glaucescens</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+hirta&title_tag=Rudbeckia+hirta>Rudbeckia hirta</a> (89)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+hirta+var.+angustifolia&title_tag=Rudbeckia+hirta+var.+angustifolia>Rudbeckia hirta var. angustifolia</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+hirta+var.+pulcherrima&title_tag=Rudbeckia+hirta+var.+pulcherrima>Rudbeckia hirta var. pulcherrima</a> (46)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+klamathensis&title_tag=Rudbeckia+klamathensis>Rudbeckia klamathensis</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+laciniata&title_tag=Rudbeckia+laciniata>Rudbeckia laciniata</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+laciniata+var.+ampla&title_tag=Rudbeckia+laciniata+var.+ampla>Rudbeckia laciniata var. ampla</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+laciniata+var.+laciniata+&title_tag=Rudbeckia+laciniata+var.+laciniata+>Rudbeckia laciniata var. laciniata </a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+maxima&title_tag=Rudbeckia+maxima>Rudbeckia maxima</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+missouriensis&title_tag=Rudbeckia+missouriensis>Rudbeckia missouriensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+mohrii&title_tag=Rudbeckia+mohrii>Rudbeckia mohrii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+mollis&title_tag=Rudbeckia+mollis>Rudbeckia mollis</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+occidentalis&title_tag=Rudbeckia+occidentalis>Rudbeckia occidentalis</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+occidentalis+var.+glabrata&title_tag=Rudbeckia+occidentalis+var.+glabrata>Rudbeckia occidentalis var. glabrata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+occidentalis+var.+occidentalis&title_tag=Rudbeckia+occidentalis+var.+occidentalis>Rudbeckia occidentalis var. occidentalis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+sp.&title_tag=Rudbeckia+sp.>Rudbeckia sp.</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+triloba&title_tag=Rudbeckia+triloba>Rudbeckia triloba</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rudbeckia+triloba+var.+triloba+&title_tag=Rudbeckia+triloba+var.+triloba+>Rudbeckia triloba var. triloba </a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+bourgaei&title_tag=Ruellia+bourgaei>Ruellia bourgaei</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+brittoniana&title_tag=Ruellia+brittoniana>Ruellia brittoniana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+californica&title_tag=Ruellia+californica>Ruellia californica</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+californica+ssp.+californica&title_tag=Ruellia+californica+ssp.+californica>Ruellia californica ssp. californica</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+californica+ssp.+peninsularis&title_tag=Ruellia+californica+ssp.+peninsularis>Ruellia californica ssp. peninsularis</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+caroliniensis&title_tag=Ruellia+caroliniensis>Ruellia caroliniensis</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+cearensis&title_tag=Ruellia+cearensis>Ruellia cearensis</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+chartacea&title_tag=Ruellia+chartacea>Ruellia chartacea</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+corzoi&title_tag=Ruellia+corzoi>Ruellia corzoi</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+cupheoides&title_tag=Ruellia+cupheoides>Ruellia cupheoides</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+devosiana&title_tag=Ruellia+devosiana>Ruellia devosiana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+elegans&title_tag=Ruellia+elegans>Ruellia elegans</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+geminiflora&title_tag=Ruellia+geminiflora>Ruellia geminiflora</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+humilis+&title_tag=Ruellia+humilis+>Ruellia humilis </a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+jaliscana&title_tag=Ruellia+jaliscana>Ruellia jaliscana</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+leucantha+ssp.+leucantha&title_tag=Ruellia+leucantha+ssp.+leucantha>Ruellia leucantha ssp. leucantha</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+macrantha&title_tag=Ruellia+macrantha>Ruellia macrantha</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+metzae&title_tag=Ruellia+metzae>Ruellia metzae</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+nudiflora&title_tag=Ruellia+nudiflora>Ruellia nudiflora</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+palmeri&title_tag=Ruellia+palmeri>Ruellia palmeri</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+parryi&title_tag=Ruellia+parryi>Ruellia parryi</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+patula&title_tag=Ruellia+patula>Ruellia patula</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+peninsularis&title_tag=Ruellia+peninsularis>Ruellia peninsularis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+pringlei&title_tag=Ruellia+pringlei>Ruellia pringlei</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+pulcherrima&title_tag=Ruellia+pulcherrima>Ruellia pulcherrima</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+simplex&title_tag=Ruellia+simplex>Ruellia simplex</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+sp.&title_tag=Ruellia+sp.>Ruellia sp.</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+squarrosa&title_tag=Ruellia+squarrosa>Ruellia squarrosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+strepens&title_tag=Ruellia+strepens>Ruellia strepens</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+succulenta&title_tag=Ruellia+succulenta>Ruellia succulenta</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruellia+zalesskii&title_tag=Ruellia+zalesskii>Ruellia zalesskii</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rugelia+nudicaulis&title_tag=Rugelia+nudicaulis>Rugelia nudicaulis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+acetosa&title_tag=Rumex+acetosa>Rumex acetosa</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+acetosella&title_tag=Rumex+acetosella>Rumex acetosella</a> (93)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+alpinus&title_tag=Rumex+alpinus>Rumex alpinus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+californicus&title_tag=Rumex+californicus>Rumex californicus</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+conglomeratus&title_tag=Rumex+conglomeratus>Rumex conglomeratus</a> (44)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+crassus&title_tag=Rumex+crassus>Rumex crassus</a> (35)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+crispus&title_tag=Rumex+crispus>Rumex crispus</a> (111)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+dentatus&title_tag=Rumex+dentatus>Rumex dentatus</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+fenestratus&title_tag=Rumex+fenestratus>Rumex fenestratus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+fueginus&title_tag=Rumex+fueginus>Rumex fueginus</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+giganteus&title_tag=Rumex+giganteus>Rumex giganteus</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+hymenosepalus&title_tag=Rumex+hymenosepalus>Rumex hymenosepalus</a> (67)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+kerneri&title_tag=Rumex+kerneri>Rumex kerneri</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+lunaria&title_tag=Rumex+lunaria>Rumex lunaria</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+nivalis&title_tag=Rumex+nivalis>Rumex nivalis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+obtusifolius&title_tag=Rumex+obtusifolius>Rumex obtusifolius</a> (33)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+occidentalis&title_tag=Rumex+occidentalis>Rumex occidentalis</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+palustris&title_tag=Rumex+palustris>Rumex palustris</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+paucifolius&title_tag=Rumex+paucifolius>Rumex paucifolius</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+persicarioides&title_tag=Rumex+persicarioides>Rumex persicarioides</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+pulcher&title_tag=Rumex+pulcher>Rumex pulcher</a> (60)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+rupestris&title_tag=Rumex+rupestris>Rumex rupestris</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+salicifolius&title_tag=Rumex+salicifolius>Rumex salicifolius</a> (56)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+salicifolius+var.+denticulatus&title_tag=Rumex+salicifolius+var.+denticulatus>Rumex salicifolius var. denticulatus</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+salicifolius+var.+triangulivalvis&title_tag=Rumex+salicifolius+var.+triangulivalvis>Rumex salicifolius var. triangulivalvis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+sanguineus&title_tag=Rumex+sanguineus>Rumex sanguineus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+sanguineus+var.+sanguineus&title_tag=Rumex+sanguineus+var.+sanguineus>Rumex sanguineus var. sanguineus</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+scutatus&title_tag=Rumex+scutatus>Rumex scutatus</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+scutatus+ssp.+scutatus&title_tag=Rumex+scutatus+ssp.+scutatus>Rumex scutatus ssp. scutatus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+skottsbergii&title_tag=Rumex+skottsbergii>Rumex skottsbergii</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+sp.&title_tag=Rumex+sp.>Rumex sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+stenophyllus&title_tag=Rumex+stenophyllus>Rumex stenophyllus</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+thyrsoides&title_tag=Rumex+thyrsoides>Rumex thyrsoides</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+transitorius&title_tag=Rumex+transitorius>Rumex transitorius</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+triangulivalvis&title_tag=Rumex+triangulivalvis>Rumex triangulivalvis</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumex+venosus&title_tag=Rumex+venosus>Rumex venosus</a> (24)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumfordia+penninervis&title_tag=Rumfordia+penninervis>Rumfordia penninervis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rumohra+adiantiformis&title_tag=Rumohra+adiantiformis>Rumohra adiantiformis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rupertia+hallii&title_tag=Rupertia+hallii>Rupertia hallii</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rupertia+physodes&title_tag=Rupertia+physodes>Rupertia physodes</a> (40)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rupertia+rigida&title_tag=Rupertia+rigida>Rupertia rigida</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rupicapnos+africana&title_tag=Rupicapnos+africana>Rupicapnos africana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruppia+maritima&title_tag=Ruppia+maritima>Ruppia maritima</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruschia+dichroa&title_tag=Ruschia+dichroa>Ruschia dichroa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruschia+marianae&title_tag=Ruschia+marianae>Ruschia marianae</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruschia+muricata&title_tag=Ruschia+muricata>Ruschia muricata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruschia+rupicola&title_tag=Ruschia+rupicola>Ruschia rupicola</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruschia+spinosa&title_tag=Ruschia+spinosa>Ruschia spinosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruschia+tecta&title_tag=Ruschia+tecta>Ruschia tecta</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruscus+aculeatus&title_tag=Ruscus+aculeatus>Ruscus aculeatus</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Russelia+equisetiformis&title_tag=Russelia+equisetiformis>Russelia equisetiformis</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Russelia+sonorensis+var.+sonorensis&title_tag=Russelia+sonorensis+var.+sonorensis>Russelia sonorensis var. sonorensis</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Russellia+equisetiformis&title_tag=Russellia+equisetiformis>Russellia equisetiformis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruta+chalepensis&title_tag=Ruta+chalepensis>Ruta chalepensis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruta+divaricata&title_tag=Ruta+divaricata>Ruta divaricata</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruta+graveolens&title_tag=Ruta+graveolens>Ruta graveolens</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ruttya+fruticosa&title_tag=Ruttya+fruticosa>Ruttya fruticosa</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rydbergia+grandiflora&title_tag=Rydbergia+grandiflora>Rydbergia grandiflora</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rytidosperma+caespitosum&title_tag=Rytidosperma+caespitosum>Rytidosperma caespitosum</a> (28)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rytidosperma+penicillatum&title_tag=Rytidosperma+penicillatum>Rytidosperma penicillatum</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Rytidostylis+gracilis&title_tag=Rytidostylis+gracilis>Rytidostylis gracilis</a> (4)<br>
+</td>
+</tr></table>
+
+    </td>
+    </tr>
+    </table>
+
+
+<!-- bottom lt. blue section -->
+
+<tr>
+<td colspan=2 bgcolor=DFE5FA>
+    <table cellpadding=15 align=center>
+    <tr>
+    <td>
+    <br>
+    </font>
+    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+<!--- bottom section -->
+<p>
+<center>
+<table cellpadding=5 cellspacing=5>
+<tr>
+<td>
+<center>
+<a href=/>CalPhotos</a>
+ is a project of <a href=http://bnhm.berkeley.edu>BNHM</a>&nbsp;&nbsp;
+University of California, Berkeley
+<p>
+<a href=/cgi/dlpmail?step=form&subject=CalPhotos>Questions and Comments</a>
+<br>
+<small>
+
+<i>
+this page last updated: Jul 25, 2023
+<br>
+</i>
+</small>
+
+
+</table>
+</center>
+<p>
+</small>
+</font>
+</body>
+</html>
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/js/calphotos.js"></script>
+<title>
+
+CalPhotos Plants: Scientific Names [U]
+
+</title>
+
+
+<style type="text/css">
+   p, td, th, body {font-family: arial, verdana, helvetica, sans-serif;}
+   p, td, th, body {font-size: 14px;}
+   a.nounderline {
+       text-decoration: none;
+       color:  white;
+       outline: none;
+    }
+    "a.subtle_link {
+       text-decoration: none;
+       font-size: 10px;
+       outline: none;
+    }
+</style>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BGCZ4BQBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1BGCZ4BQBR');
+</script>
+
+
+<!-- jquery-3.3.1.min.js used for sessions, ajax, figuring out if someone is logged in or not -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+function checkLogin() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/check_login?cgisessid=' + x, 
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/check_login?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#contributors').html(response);
+
+        },
+        error: function(xhr) {
+            $('#contributors').html('response error login');
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+function getPageContents() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/contributor_page?cgisessid=' + x,
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/contributor_page?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#links').html(response);
+        },
+        error: function(xhr) {
+            $('#links').html('response error');
+        }
+    });
+}
+</script>
+
+
+</head>
+<body bgcolor=#FFFFFF onload='checkLogin();'>
+
+<!-- colors: silver=#E6E8FA navyblu=#23238E ltblue=DFE5FA  -->
+
+<table align=center border=0 width=90% cellspacing=0 cellpadding=0>
+<!-- logo (optional) on lt. blue background -->
+<tr>
+<td width=5% bgcolor=DFE5FA>
+<!-- uncomment the following line to add a logo ----->
+<!-- img align = left border=0 height=130 src = "/calflora/icon.gif" alt = "CalFlora"-->
+<br>
+</td>
+<td align=left valign=bottom>
+    <table border=0 cellpadding=5>
+    <tr>
+    <td align=left valign=bottom>
+    <font face="Helvetica,Arial,Verdana" color=23238E>
+    <big><big><big>
+
+CalPhotos Plants: Scientific Names [U]
+
+    </big></big></big>
+    </font>
+    &nbsp;&nbsp;
+    <font face="Helvetica,Arial,Verdana" color=000000>
+    <b>
+    <!-- insert a smaller heading comment here -->
+    </b>
+    </font>
+    </td>
+    </table>
+</td>
+</tr>
+
+<!-- navy blue bar -->
+<tr>
+<td width=100% colspan=2 bgcolor=23238E align=right>
+
+<div id="contributors"></div>
+
+</td></tr>
+<!-- left side lt. blue bar with links -->
+<tr>
+<td width=10%  bgcolor=DFE5FA align=center valign=top>
+&nbsp;<p>
+<font face="Helvetica,Arial,Verdana">
+<p>
+<small>
+
+
+</small>
+</font>
+</td>
+<!-- main menu -->
+<td valign=top>
+    <table cellpadding=5 width=100%>
+    <tr>
+    <td valign=top>
+    <font face="Helvetica,Arial,Verdana">
+
+<center><i>Back to: <a href=/>CalPhotos</a> > <a href=/flora/>Plants</a> > Browse Scientific Names [U]</i></center><p><p><center>Last updated: Jul 25 2023</center><p>
+<p>see also: <a href=/browse_imgs/plant.html>Browse Thumbnail Photos of Plants</a><p>
+<table width=100%><tr>
+<td valign=top><b>Ucnide - Urena</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ucnide+urens&title_tag=Ucnide+urens>Ucnide urens</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uebelmannia+pectinifera+var.+multicostata&title_tag=Uebelmannia+pectinifera+var.+multicostata>Uebelmannia pectinifera var. multicostata</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ugni+molinae&title_tag=Ugni+molinae>Ugni molinae</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ugni+myricoides&title_tag=Ugni+myricoides>Ugni myricoides</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulex+europaeus&title_tag=Ulex+europaeus>Ulex europaeus</a> (61)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+americana&title_tag=Ulmus+americana>Ulmus americana</a> (34)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+canescens&title_tag=Ulmus+canescens>Ulmus canescens</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+glabra&title_tag=Ulmus+glabra>Ulmus glabra</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+laevis&title_tag=Ulmus+laevis>Ulmus laevis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+minor&title_tag=Ulmus+minor>Ulmus minor</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+minor+minor&title_tag=Ulmus+minor+minor>Ulmus minor minor</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+minor+ssp.+minor&title_tag=Ulmus+minor+ssp.+minor>Ulmus minor ssp. minor</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+parviflora&title_tag=Ulmus+parviflora>Ulmus parviflora</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+parvifolia&title_tag=Ulmus+parvifolia>Ulmus parvifolia</a> (42)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+procera&title_tag=Ulmus+procera>Ulmus procera</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+propinqua&title_tag=Ulmus+propinqua>Ulmus propinqua</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+pumila&title_tag=Ulmus+pumila>Ulmus pumila</a> (30)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+rubra+&title_tag=Ulmus+rubra+>Ulmus rubra </a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+thomasii&title_tag=Ulmus+thomasii>Ulmus thomasii</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulmus+x+hollandica&title_tag=Ulmus+x+hollandica>Ulmus x hollandica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulota+megalospora&title_tag=Ulota+megalospora>Ulota megalospora</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulota+obtusiuscula&title_tag=Ulota+obtusiuscula>Ulota obtusiuscula</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulota+phyllantha&title_tag=Ulota+phyllantha>Ulota phyllantha</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulva+flexuosa&title_tag=Ulva+flexuosa>Ulva flexuosa</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulva+intestinalis&title_tag=Ulva+intestinalis>Ulva intestinalis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulva+ranunculata&title_tag=Ulva+ranunculata>Ulva ranunculata</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ulva+sp.&title_tag=Ulva+sp.>Ulva sp.</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Umbellularia+californica&title_tag=Umbellularia+californica>Umbellularia californica</a> (197)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Umbellularia+californica+var.+californica+&title_tag=Umbellularia+californica+var.+californica+>Umbellularia californica var. californica </a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Umbilicus+horizontalis&title_tag=Umbilicus+horizontalis>Umbilicus horizontalis</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Umbilicus+rupestris&title_tag=Umbilicus+rupestris>Umbilicus rupestris</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=unavailable&title_tag=unavailable>unavailable</a> (31)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uncaria+tomentosa&title_tag=Uncaria+tomentosa>Uncaria tomentosa</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uncarina+roeoesliana&title_tag=Uncarina+roeoesliana>Uncarina roeoesliana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Undaria+pinnatifida&title_tag=Undaria+pinnatifida>Undaria pinnatifida</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ungnadia+speciosa&title_tag=Ungnadia+speciosa>Ungnadia speciosa</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uniola+paniculata&title_tag=Uniola+paniculata>Uniola paniculata</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Unknown&title_tag=Unknown>Unknown</a> (475)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Unknown+sp.&title_tag=Unknown+sp.>Unknown sp.</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Upinus+argenteus&title_tag=Upinus+argenteus>Upinus argenteus</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urandra+nitida&title_tag=Urandra+nitida>Urandra nitida</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urena+lobata+ssp.+lobata&title_tag=Urena+lobata+ssp.+lobata>Urena lobata ssp. lobata</a> (1)<br>
+</td>
+<td valign=top><b>Urera - Utricularia</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urera+alceifolia&title_tag=Urera+alceifolia>Urera alceifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urera+caracasana&title_tag=Urera+caracasana>Urera caracasana</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urginea+maritima&title_tag=Urginea+maritima>Urginea maritima</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uropappus+lindleyi&title_tag=Uropappus+lindleyi>Uropappus lindleyi</a> (144)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urospermum+dalechampii&title_tag=Urospermum+dalechampii>Urospermum dalechampii</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urospermum+picroides&title_tag=Urospermum+picroides>Urospermum picroides</a> (97)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ursinia+anthemoides&title_tag=Ursinia+anthemoides>Ursinia anthemoides</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ursinia+cakilefolia&title_tag=Ursinia+cakilefolia>Ursinia cakilefolia</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ursinia+sericea&title_tag=Ursinia+sericea>Ursinia sericea</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+berteroi&title_tag=Urtica+berteroi>Urtica berteroi</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+cannabina&title_tag=Urtica+cannabina>Urtica cannabina</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+dioca&title_tag=Urtica+dioca>Urtica dioca</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+dioica&title_tag=Urtica+dioica>Urtica dioica</a> (53)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+dioica+ssp.+gracilis&title_tag=Urtica+dioica+ssp.+gracilis>Urtica dioica ssp. gracilis</a> (20)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+dioica+ssp.+holosericea&title_tag=Urtica+dioica+ssp.+holosericea>Urtica dioica ssp. holosericea</a> (69)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+dubia&title_tag=Urtica+dubia>Urtica dubia</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+gracilis&title_tag=Urtica+gracilis>Urtica gracilis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+membranacea&title_tag=Urtica+membranacea>Urtica membranacea</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+pilulifera&title_tag=Urtica+pilulifera>Urtica pilulifera</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+sp.&title_tag=Urtica+sp.>Urtica sp.</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Urtica+urens&title_tag=Urtica+urens>Urtica urens</a> (37)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Usnea+longissima&title_tag=Usnea+longissima>Usnea longissima</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utahia+sileri&title_tag=Utahia+sileri>Utahia sileri</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+alpina&title_tag=Utricularia+alpina>Utricularia alpina</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+amethystina&title_tag=Utricularia+amethystina>Utricularia amethystina</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+aurea&title_tag=Utricularia+aurea>Utricularia aurea</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+bisquamata&title_tag=Utricularia+bisquamata>Utricularia bisquamata</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+blanchetii&title_tag=Utricularia+blanchetii>Utricularia blanchetii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+calycifida&title_tag=Utricularia+calycifida>Utricularia calycifida</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+cornuta&title_tag=Utricularia+cornuta>Utricularia cornuta</a> (26)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+dichotoma&title_tag=Utricularia+dichotoma>Utricularia dichotoma</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+dimorphantha&title_tag=Utricularia+dimorphantha>Utricularia dimorphantha</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+floridana&title_tag=Utricularia+floridana>Utricularia floridana</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+foliosa&title_tag=Utricularia+foliosa>Utricularia foliosa</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+fulva&title_tag=Utricularia+fulva>Utricularia fulva</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+geminiscapa&title_tag=Utricularia+geminiscapa>Utricularia geminiscapa</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+gibba&title_tag=Utricularia+gibba>Utricularia gibba</a> (39)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+graminifolia&title_tag=Utricularia+graminifolia>Utricularia graminifolia</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+humboldtii&title_tag=Utricularia+humboldtii>Utricularia humboldtii</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+inflata&title_tag=Utricularia+inflata>Utricularia inflata</a> (18)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+intermedia&title_tag=Utricularia+intermedia>Utricularia intermedia</a> (57)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+jamesoniana&title_tag=Utricularia+jamesoniana>Utricularia jamesoniana</a> (5)<br>
+</td>
+<td valign=top><b>Utricularia - Uvularia</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+juncea&title_tag=Utricularia+juncea>Utricularia juncea</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+lateriflora&title_tag=Utricularia+lateriflora>Utricularia lateriflora</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+livida&title_tag=Utricularia+livida>Utricularia livida</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+longifolia&title_tag=Utricularia+longifolia>Utricularia longifolia</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+macrorhiza&title_tag=Utricularia+macrorhiza>Utricularia macrorhiza</a> (78)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+menziesii&title_tag=Utricularia+menziesii>Utricularia menziesii</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+minor&title_tag=Utricularia+minor>Utricularia minor</a> (53)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+multifida&title_tag=Utricularia+multifida>Utricularia multifida</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+nana&title_tag=Utricularia+nana>Utricularia nana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+nelumbifolia&title_tag=Utricularia+nelumbifolia>Utricularia nelumbifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+nephrophylla&title_tag=Utricularia+nephrophylla>Utricularia nephrophylla</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+ochroleuca&title_tag=Utricularia+ochroleuca>Utricularia ochroleuca</a> (33)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+olivacea&title_tag=Utricularia+olivacea>Utricularia olivacea</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+praelonga&title_tag=Utricularia+praelonga>Utricularia praelonga</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+prehensilis&title_tag=Utricularia+prehensilis>Utricularia prehensilis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+pubescens&title_tag=Utricularia+pubescens>Utricularia pubescens</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+purpurea&title_tag=Utricularia+purpurea>Utricularia purpurea</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+radiata&title_tag=Utricularia+radiata>Utricularia radiata</a> (14)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+ramosissima&title_tag=Utricularia+ramosissima>Utricularia ramosissima</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+reniformis&title_tag=Utricularia+reniformis>Utricularia reniformis</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+resupinata&title_tag=Utricularia+resupinata>Utricularia resupinata</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+sandersonii&title_tag=Utricularia+sandersonii>Utricularia sandersonii</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+sp.&title_tag=Utricularia+sp.>Utricularia sp.</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+striata&title_tag=Utricularia+striata>Utricularia striata</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+stygia&title_tag=Utricularia+stygia>Utricularia stygia</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+subulata&title_tag=Utricularia+subulata>Utricularia subulata</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+tenella&title_tag=Utricularia+tenella>Utricularia tenella</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+tridentata&title_tag=Utricularia+tridentata>Utricularia tridentata</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+triloba&title_tag=Utricularia+triloba>Utricularia triloba</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+uliginosa&title_tag=Utricularia+uliginosa>Utricularia uliginosa</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+uniflora&title_tag=Utricularia+uniflora>Utricularia uniflora</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+vulgaris&title_tag=Utricularia+vulgaris>Utricularia vulgaris</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+vulgaris+ssp.+Macrorhiza&title_tag=Utricularia+vulgaris+ssp.+Macrorhiza>Utricularia vulgaris ssp. Macrorhiza</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+warburgii&title_tag=Utricularia+warburgii>Utricularia warburgii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Utricularia+westonii&title_tag=Utricularia+westonii>Utricularia westonii</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uvaria+confertiflora&title_tag=Uvaria+confertiflora>Uvaria confertiflora</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uvaria+elmeri&title_tag=Uvaria+elmeri>Uvaria elmeri</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uvaria+sympetala&title_tag=Uvaria+sympetala>Uvaria sympetala</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uvularia+grandiflora&title_tag=Uvularia+grandiflora>Uvularia grandiflora</a> (28)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Uvularia+sessilifolia&title_tag=Uvularia+sessilifolia>Uvularia sessilifolia</a> (15)<br>
+</td>
+</tr></table>
+
+    </td>
+    </tr>
+    </table>
+
+
+<!-- bottom lt. blue section -->
+
+<tr>
+<td colspan=2 bgcolor=DFE5FA>
+    <table cellpadding=15 align=center>
+    <tr>
+    <td>
+    <br>
+    </font>
+    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+<!--- bottom section -->
+<p>
+<center>
+<table cellpadding=5 cellspacing=5>
+<tr>
+<td>
+<center>
+<a href=/>CalPhotos</a>
+ is a project of <a href=http://bnhm.berkeley.edu>BNHM</a>&nbsp;&nbsp;
+University of California, Berkeley
+<p>
+<a href=/cgi/dlpmail?step=form&subject=CalPhotos>Questions and Comments</a>
+<br>
+<small>
+
+<i>
+this page last updated: Jul 25, 2023
+<br>
+</i>
+</small>
+
+
+</table>
+</center>
+<p>
+</small>
+</font>
+</body>
+</html>
+

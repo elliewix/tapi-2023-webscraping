@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/js/calphotos.js"></script>
+<title>
+
+CalPhotos Plants: Scientific Names [Y]
+
+</title>
+
+
+<style type="text/css">
+   p, td, th, body {font-family: arial, verdana, helvetica, sans-serif;}
+   p, td, th, body {font-size: 14px;}
+   a.nounderline {
+       text-decoration: none;
+       color:  white;
+       outline: none;
+    }
+    "a.subtle_link {
+       text-decoration: none;
+       font-size: 10px;
+       outline: none;
+    }
+</style>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BGCZ4BQBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1BGCZ4BQBR');
+</script>
+
+
+<!-- jquery-3.3.1.min.js used for sessions, ajax, figuring out if someone is logged in or not -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+function checkLogin() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/check_login?cgisessid=' + x, 
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/check_login?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#contributors').html(response);
+
+        },
+        error: function(xhr) {
+            $('#contributors').html('response error login');
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+function getPageContents() {
+    var x = getCookie('CGISESSID');
+
+    $.ajax({
+        cache: 'false',
+        url: 'https://calphotos.berkeley.edu/cgi/contributor_page?cgisessid=' + x,
+        <!-- url: 'http://calphotos.berkeley.edu:8000/cgi/contributor_page?cgisessid=' + x, -->
+        type: 'post',
+        dataType: 'html',
+        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+        success: function(response) {
+            $('#links').html(response);
+        },
+        error: function(xhr) {
+            $('#links').html('response error');
+        }
+    });
+}
+</script>
+
+
+</head>
+<body bgcolor=#FFFFFF onload='checkLogin();'>
+
+<!-- colors: silver=#E6E8FA navyblu=#23238E ltblue=DFE5FA  -->
+
+<table align=center border=0 width=90% cellspacing=0 cellpadding=0>
+<!-- logo (optional) on lt. blue background -->
+<tr>
+<td width=5% bgcolor=DFE5FA>
+<!-- uncomment the following line to add a logo ----->
+<!-- img align = left border=0 height=130 src = "/calflora/icon.gif" alt = "CalFlora"-->
+<br>
+</td>
+<td align=left valign=bottom>
+    <table border=0 cellpadding=5>
+    <tr>
+    <td align=left valign=bottom>
+    <font face="Helvetica,Arial,Verdana" color=23238E>
+    <big><big><big>
+
+CalPhotos Plants: Scientific Names [Y]
+
+    </big></big></big>
+    </font>
+    &nbsp;&nbsp;
+    <font face="Helvetica,Arial,Verdana" color=000000>
+    <b>
+    <!-- insert a smaller heading comment here -->
+    </b>
+    </font>
+    </td>
+    </table>
+</td>
+</tr>
+
+<!-- navy blue bar -->
+<tr>
+<td width=100% colspan=2 bgcolor=23238E align=right>
+
+<div id="contributors"></div>
+
+</td></tr>
+<!-- left side lt. blue bar with links -->
+<tr>
+<td width=10%  bgcolor=DFE5FA align=center valign=top>
+&nbsp;<p>
+<font face="Helvetica,Arial,Verdana">
+<p>
+<small>
+
+
+</small>
+</font>
+</td>
+<!-- main menu -->
+<td valign=top>
+    <table cellpadding=5 width=100%>
+    <tr>
+    <td valign=top>
+    <font face="Helvetica,Arial,Verdana">
+
+<center><i>Back to: <a href=/>CalPhotos</a> > <a href=/flora/>Plants</a> > Browse Scientific Names [Y]</i></center><p><p><center>Last updated: Jul 25 2023</center><p>
+<p>see also: <a href=/browse_imgs/plant.html>Browse Thumbnail Photos of Plants</a><p>
+<table width=100%><tr>
+<td valign=top><b>Yabea - Yucca</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yabea+microcarpa&title_tag=Yabea+microcarpa>Yabea microcarpa</a> (27)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yavia+cryptocarpa&title_tag=Yavia+cryptocarpa>Yavia cryptocarpa</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yermo+xanthocephalus&title_tag=Yermo+xanthocephalus>Yermo xanthocephalus</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Youngia+japonica&title_tag=Youngia+japonica>Youngia japonica</a> (12)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Ypsilandra+thibetica&title_tag=Ypsilandra+thibetica>Ypsilandra thibetica</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca&title_tag=Yucca>Yucca</a> (2)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+angustissima&title_tag=Yucca+angustissima>Yucca angustissima</a> (16)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+baccata&title_tag=Yucca+baccata>Yucca baccata</a> (70)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+baccata+var.+baccata&title_tag=Yucca+baccata+var.+baccata>Yucca baccata var. baccata</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+baileyi&title_tag=Yucca+baileyi>Yucca baileyi</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+baileyi+var.+intermedia&title_tag=Yucca+baileyi+var.+intermedia>Yucca baileyi var. intermedia</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+brevifolia&title_tag=Yucca+brevifolia>Yucca brevifolia</a> (253)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+brevifolia+ssp.+brevifolia&title_tag=Yucca+brevifolia+ssp.+brevifolia>Yucca brevifolia ssp. brevifolia</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+brevifolia+ssp.+jaegeriana&title_tag=Yucca+brevifolia+ssp.+jaegeriana>Yucca brevifolia ssp. jaegeriana</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+brevifolia+var.+brevifolia&title_tag=Yucca+brevifolia+var.+brevifolia>Yucca brevifolia var. brevifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+brevifolia+var.+jaegeriana&title_tag=Yucca+brevifolia+var.+jaegeriana>Yucca brevifolia var. jaegeriana</a> (5)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+campestris&title_tag=Yucca+campestris>Yucca campestris</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+capensis&title_tag=Yucca+capensis>Yucca capensis</a> (6)<br>
+</td>
+<td valign=top><b>Yucca - Yucca</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+constricta&title_tag=Yucca+constricta>Yucca constricta</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+elata&title_tag=Yucca+elata>Yucca elata</a> (31)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+elata+var.+utahensis&title_tag=Yucca+elata+var.+utahensis>Yucca elata var. utahensis</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+elephantipes&title_tag=Yucca+elephantipes>Yucca elephantipes</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+endlichiana&title_tag=Yucca+endlichiana>Yucca endlichiana</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+faxoniana&title_tag=Yucca+faxoniana>Yucca faxoniana</a> (17)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+filamentosa&title_tag=Yucca+filamentosa>Yucca filamentosa</a> (10)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+filifera&title_tag=Yucca+filifera>Yucca filifera</a> (19)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+flaccida&title_tag=Yucca+flaccida>Yucca flaccida</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+gigantea&title_tag=Yucca+gigantea>Yucca gigantea</a> (6)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+glauca&title_tag=Yucca+glauca>Yucca glauca</a> (23)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+gloriosa&title_tag=Yucca+gloriosa>Yucca gloriosa</a> (11)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+grandiflora&title_tag=Yucca+grandiflora>Yucca grandiflora</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+harrimaniae&title_tag=Yucca+harrimaniae>Yucca harrimaniae</a> (32)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+jaegeriana&title_tag=Yucca+jaegeriana>Yucca jaegeriana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+nana&title_tag=Yucca+nana>Yucca nana</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+neomexicana&title_tag=Yucca+neomexicana>Yucca neomexicana</a> (3)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+pallida&title_tag=Yucca+pallida>Yucca pallida</a> (1)<br>
+</td>
+<td valign=top><b>Yucca - Yungasocereus</b><p>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+queretaroensis&title_tag=Yucca+queretaroensis>Yucca queretaroensis</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+recurvifolia&title_tag=Yucca+recurvifolia>Yucca recurvifolia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+rostrata&title_tag=Yucca+rostrata>Yucca rostrata</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+schidigera&title_tag=Yucca+schidigera>Yucca schidigera</a> (223)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+schottii&title_tag=Yucca+schottii>Yucca schottii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+sp.&title_tag=Yucca+sp.>Yucca sp.</a> (7)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+thompsoniaia&title_tag=Yucca+thompsoniaia>Yucca thompsoniaia</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+thompsoniana&title_tag=Yucca+thompsoniana>Yucca thompsoniana</a> (15)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+torreyi&title_tag=Yucca+torreyi>Yucca torreyi</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+treculeana&title_tag=Yucca+treculeana>Yucca treculeana</a> (21)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+utahensis&title_tag=Yucca+utahensis>Yucca utahensis</a> (8)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+valida&title_tag=Yucca+valida>Yucca valida</a> (13)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+whipplei&title_tag=Yucca+whipplei>Yucca whipplei</a> (9)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+whipplei+ssp.+eremica&title_tag=Yucca+whipplei+ssp.+eremica>Yucca whipplei ssp. eremica</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+whipplei+ssp.+parishii&title_tag=Yucca+whipplei+ssp.+parishii>Yucca whipplei ssp. parishii</a> (1)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yucca+whipplei+var.+eremica&title_tag=Yucca+whipplei+var.+eremica>Yucca whipplei var. eremica</a> (4)<br>
+<a href=/cgi/img_query?stat=BROWSE&where-genre=Plant&where-taxon=Yungasocereus+inquisivensis&title_tag=Yungasocereus+inquisivensis>Yungasocereus inquisivensis</a> (4)<br>
+</td>
+</tr></table>
+
+    </td>
+    </tr>
+    </table>
+
+
+<!-- bottom lt. blue section -->
+
+<tr>
+<td colspan=2 bgcolor=DFE5FA>
+    <table cellpadding=15 align=center>
+    <tr>
+    <td>
+    <br>
+    </font>
+    </td>
+    </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+<!--- bottom section -->
+<p>
+<center>
+<table cellpadding=5 cellspacing=5>
+<tr>
+<td>
+<center>
+<a href=/>CalPhotos</a>
+ is a project of <a href=http://bnhm.berkeley.edu>BNHM</a>&nbsp;&nbsp;
+University of California, Berkeley
+<p>
+<a href=/cgi/dlpmail?step=form&subject=CalPhotos>Questions and Comments</a>
+<br>
+<small>
+
+<i>
+this page last updated: Jul 25, 2023
+<br>
+</i>
+</small>
+
+
+</table>
+</center>
+<p>
+</small>
+</font>
+</body>
+</html>
+
